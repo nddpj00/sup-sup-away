@@ -1,5 +1,26 @@
+function runQuestionnaire() {
 
+}
 
+function optionConfirm() {
+
+}
+
+function nextQuestion() {
+
+}
+
+function questionOverCheck() {
+
+}
+
+function restartQuestionnaire() {
+
+}
+
+function finalDestination() {
+  
+}
 
 // Questions to be asked
 
