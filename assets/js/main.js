@@ -1,3 +1,20 @@
+// Wait for DOM to load before runQuestionnaire initiates
+//Get the button elements and add event listeners to them
+
+document.addEventListener("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName("button");
+
+  for (let button of buttons) {
+    button.addEventListener("click", function() {
+      if (this.getAttribute("data-type") === "next") {
+        alert("Please make a choice");
+      } else{
+        // run optionConfirm() function
+      }
+    })
+  }
+})
+
 function runQuestionnaire() {
 
 }
@@ -19,7 +36,7 @@ function restartQuestionnaire() {
 }
 
 function finalDestination() {
-  
+
 }
 
 // Questions to be asked

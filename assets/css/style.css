@@ -142,12 +142,11 @@ section {
     height :400px;
 }
 
-.startbtn-container{
-    height: 120px;
-}
+
 
 .question-container{
-    height: 80px;
+    height: 200px;
+    
 }
 
 .option-container{
