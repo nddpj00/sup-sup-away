@@ -142,6 +142,10 @@ section {
     height :400px;
 }
 
+#question {
+    font-family: dinnextltpro;
+    font-size: 20px;
+}
 
 
 .question-container{

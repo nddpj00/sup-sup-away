@@ -1,8 +1,31 @@
 // Wait for DOM to load
-//Get the navigation button elements and add event listeners to them
+//Get the navigation button elements and add event listeners to them which give alerts. 
+// Set the first question and options.
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(){
+  runQuestionnaire();
+})
+
+//function runQuestionnaire()
+
+  function runQuestionnaire() {
+  let questionOne = questions[0].q;
   
+  //gets #question div and populates with first question
+  document.getElementById("question").innerHTML = questionOne;
+
+  //declares variables for first queston answer options
+  let optionOne = questions[0].a[0];
+  let optionTwo = questions[0].a[1];
+  let optionThree = questions[0].a[2];
+
+  //populates answer buttons with question 1 options
+
+  document.getElementById("opt1").innerHTML = optionOne;
+  document.getElementById("opt2").innerHTML = optionTwo;
+  document.getElementById("opt3").innerHTML = optionThree;
+
+  //adds event listeners to buttons. alerts if restart/next buttons selected before choice made.
   let buttons = document.getElementsByTagName("button");
   
   for (let button of buttons){
@@ -11,15 +34,16 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Please make a choice");
       } else if (this.getAttribute("class") === "restart") {
           alert("Hey, you're already at the start");
+      } else if (this.getAttribute("class") === "option") {
+          this.style.backgroundColor = "green";
     }
   })
 }
-})
+  }
 
 
-function runQuestionnaire() {
 
-}
+
 
 function optionConfirm() {
 
@@ -43,10 +67,10 @@ function finalDestination() {
 
 // Questions to be asked
 
-const Questions = [{
+const questions = [{
   id:0,
   q: "Where would you like to paddle?",
-  a: ["Sea", "Lake", "Broad"]
+  a: ["Sea", "Lake", "Broad"],
   },
 
   {id:1,
