@@ -1,19 +1,21 @@
-// Wait for DOM to load before runQuestionnaire initiates
-//Get the button elements and add event listeners to them
+// Wait for DOM to load
+//Get the navigation button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function() {
+  
   let buttons = document.getElementsByTagName("button");
-
-  for (let button of buttons) {
+  
+  for (let button of buttons){
     button.addEventListener("click", function() {
-      if (this.getAttribute("data-type") === "next") {
+      if (this.getAttribute("class") === "next") {
         alert("Please make a choice");
-      } else{
-        // run optionConfirm() function
-      }
-    })
-  }
+      } else if (this.getAttribute("class") === "restart") {
+          alert("Hey, you're already at the start");
+    }
+  })
+}
 })
+
 
 function runQuestionnaire() {
 
