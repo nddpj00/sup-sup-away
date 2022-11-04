@@ -30,16 +30,29 @@ let questions = [{
   }]
 
 
-function runQuestionnaire(){
-  let questionBox = document.querySelector('#question');
-  let displayButton = document.querySelector('#option');
-  document.getElementById('startButton').style.display = 'none';
-  
+function runQuestionnaire(id){
+  //get the question box
+  let questionBox = document.getElementById('question');
+
   //getting question from Questions object
 
-  questionBox.innerText = Questions[id].q;
+  questionBox.innerText = questions[id].q;
 
+
+  //get the answer boxes
+
+  let displayButton1 = document.getElementById('opt1');
+  let displayButton2 = document.getElementById('opt2')
+
+  //get the answer text
+
+  displayButton1.innerText = Questions[id].a[0].text;
+  displayButton2.innerText = Questions[id].a[1].text;
   
+
+  document.getElementById('startButton').style.display = 'none';
+  
+   
 
   console.log('hello there!!!')
 }
@@ -72,7 +85,17 @@ let forthKey = 'Expertise'
 resultObject[firstKey] = destinationType;
 
 
+let start = document.getElementsById('start');
+let id = 0;
 
+start.addEventListener('click',() =>{
+  if (id < 3) {
+    id++;
+    runQuestionnaire(id);
+    console.log(id);
+    console.log('is this working even?')
+  }
+})
 
 
 
