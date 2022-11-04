@@ -1,76 +1,17 @@
-// Wait for DOM to load
-//Get the navigation button elements and add event listeners to them which give alerts. 
-// Set the first question and options.
 
 document.addEventListener("DOMContentLoaded", function(){
-  runQuestionnaire();
+  
+let startButton = document.getElementById('startButton');
+startButton.addEventListener('click', runQuestionnaire);
+document.getElementById('opt1').style.display = 'none';
+document.getElementById('opt2').style.display = 'none';
 })
 
-//function runQuestionnaire()
-
-  function runQuestionnaire() {
-  let questionOne = questions[0].q;
-  
-  //gets #question div and populates with first question
-  document.getElementById("question").innerHTML = questionOne;
-
-  //declares variables for first queston answer options
-  let optionOne = questions[0].a[0];
-  let optionTwo = questions[0].a[1];
-  let optionThree = questions[0].a[2];
-
-  //populates answer buttons with question 1 options
-
-  document.getElementById("opt1").innerHTML = optionOne;
-  document.getElementById("opt2").innerHTML = optionTwo;
-  document.getElementById("opt3").innerHTML = optionThree;
-
-  //adds event listeners to buttons. alerts if restart/next buttons selected before choice made.
-  let buttons = document.getElementsByTagName("button");
-  
-  for (let button of buttons){
-    button.addEventListener("click", function() {
-      if (this.getAttribute("class") === "next") {
-        alert("Please make a choice");
-      } else if (this.getAttribute("class") === "restart") {
-          alert("Hey, you're already at the start");
-      } else if (this.getAttribute("class") === "option") {
-          this.style.backgroundColor = "green";
-    }
-  })
-}
-  }
-
-
-
-
-
-function optionConfirm() {
-
-}
-
-function nextQuestion() {
-
-}
-
-function questionOverCheck() {
-
-}
-
-function restartQuestionnaire() {
-
-}
-
-function finalDestination() {
-
-}
-
 // Questions to be asked
-
-const questions = [{
+let questions = [{
   id:0,
   q: "Where would you like to paddle?",
-  a: ["Sea", "Lake", "Broad"],
+  a: ["Sea", "Lake"],
   },
 
   {id:1,
@@ -85,8 +26,54 @@ const questions = [{
 
   {id:3,
   q: "Level of expertise?",
-  a: ["Beginner", "Intermediate", "Expert"]
+  a: ["Beginner", "Expert"]
   }]
+
+
+function runQuestionnaire(){
+  let questionBox = document.querySelector('#question');
+  let displayButton = document.querySelector('#option');
+  document.getElementById('startButton').style.display = 'none';
+  
+  //getting question from Questions object
+
+  questionBox.innerText = Questions[id].q;
+
+  
+
+  console.log('hello there!!!')
+}
+
+function nextQuestion() {
+}
+
+
+function questionOverCheck() {
+
+}
+
+function restartQuestionnaire() {
+
+}
+
+function finalDestination() {
+
+}
+
+
+
+
+//user object created from answers
+let resultObject = new Object();
+let firstKey = 'Destination';
+let secondKey = 'Hire';
+let thirdKey = 'Lessons';
+let forthKey = 'Expertise'
+resultObject[firstKey] = destinationType;
+
+
+
+
 
 
 

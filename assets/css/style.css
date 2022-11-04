@@ -150,9 +150,15 @@ section {
 
 .question-container{
     height: 200px;
-    
 }
 
+#startButton{
+    height: 150px;
+    width: 200px;
+    border-radius: 25px;
+    font-family: 'Ranchers', cursive;
+    font-size: 40px;
+}
 .option-container{
     height: 120px;
 }
