@@ -1,8 +1,10 @@
 
+// on webpage load it sets an event listener on start button and hides the option buttons.
+
 document.addEventListener("DOMContentLoaded", function(){
-  
+
 let startButton = document.getElementById('startButton');
-startButton.addEventListener('click', runQuestionnaire);
+startButton.addEventListener('click', runQuestionnaire());
 document.getElementById('opt1').style.display = 'none';
 document.getElementById('opt2').style.display = 'none';
 })
@@ -29,36 +31,34 @@ let questions = [{
   a: ["Beginner", "Expert"]
   }]
 
+// when start button is clicked the for loop iterates, displaying the questions and answers for id objects, plus hiding start button.
+
+let start = true;
 
 function runQuestionnaire(id){
   //get the question box
   let questionBox = document.getElementById('question');
-
-  //getting question from Questions object
-
-  questionBox.innerText = questions[id].q;
-
-
-  //get the answer boxes
+  
+//get the answer boxes
 
   let displayButton1 = document.getElementById('opt1');
-  let displayButton2 = document.getElementById('opt2')
+  let displayButton2 = document.getElementById('opt2');
 
-  //get the answer text
-
-  displayButton1.innerText = Questions[id].a[0].text;
-  displayButton2.innerText = Questions[id].a[1].text;
+// hides start button
+document.getElementById('startButton').style.display = 'none';
   
+//getting question from Questions object
 
-  document.getElementById('startButton').style.display = 'none';
-  
-   
+questionBox.innerText = questions[id].q;
 
-  console.log('hello there!!!')
+//get the answer text
+
+displayButton1.innerText = questions[id].a[0];
+displayButton2.innerText = questions[id].a[1];  
+
 }
 
-function nextQuestion() {
-}
+
 
 
 function questionOverCheck() {
@@ -76,27 +76,33 @@ function finalDestination() {
 
 
 
-//user object created from answers
-let resultObject = new Object();
-let firstKey = 'Destination';
-let secondKey = 'Hire';
-let thirdKey = 'Lessons';
-let forthKey = 'Expertise'
-resultObject[firstKey] = destinationType;
+//*user object created from answers
+//let resultObject = new Object();
+//let firstKey = 'Destination';
+//let secondKey = 'Hire';
+//let thirdKey = 'Lessons';
+//let forthKey = 'Expertise'
+//resultObject[firstKey] = destinationType;
 
 
-let start = document.getElementsById('start');
+if (start) {
+  runQuestionnaire("0");
+}
+
+
+let nextButton = document.getElementsByClassName('next');
+
 let id = 0;
 
-start.addEventListener('click',() =>{
-  if (id < 3) {
+nextButton.addEventListener('click',() =>{
+  start = false;
+if (id < 3) {
     id++;
     runQuestionnaire(id);
     console.log(id);
-    console.log('is this working even?')
+    console.log('is this working even?');
   }
 })
-
 
 
 

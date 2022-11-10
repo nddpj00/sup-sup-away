@@ -77,34 +77,27 @@
 
 
       <section>
-        <div id="questionnaire">
-        <div class="container text-center">
+        <div class = "container text-center" id="questionnaire">
+        
             <div class="row">
               <div class="col-8" id="quiz">
 
                  
-                  <div class="question-container" id="question">
-                    <div id="start">
-                      <button id="startButton">START!</button>
-
-                    </div>
-                    
+                  <div class="question-container" class= "hide">
+                  <div id="question">Question</div>
+                  <div id ="option-buttons" class="btn-grid"></div>
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
                   </div>
 
                   <div class="option-container">
-                    <button class="option" onclick="" id="opt1" >option1</button>
-              
-                    <button class="option" id="opt2" >option2</button>
-              
-                    
-                  </div>
-                  
+                    <button id="start-btn" class="start-btn btn">START!</button>
+                    <button id="next-btn" class="start-btn btn hide">Restart</button>
+                    <button id="restart-btn" class="start-btn btn hide">Next</button>
 
-                  <div class="navigation">
-                    <button class="restart">Restart</button>
-                    <button class="next">Next</button>
-                  </div>    
-                                    
+                                 
+                  </div>
+                                                      
                   <div class="result">
                     <p>desination result will go here.</p>
                   </div>
@@ -115,7 +108,7 @@
                 
               </div>
             </div>
-          </div>
+          
         </div>
       </section>
 
