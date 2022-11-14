@@ -31,6 +31,7 @@ let questions = [{
   q: "Level of expertise?",
   a: ["Beginner", "Expert"]
   }]
+
 let start = true;
 
 startButton.addEventListener('click', initQuestionnaire());
@@ -45,29 +46,26 @@ if (start) {
 }
 }
 
-
-
-
-function runQuestionnaire(id) {
+function runQuestionnaire(i) {
   
 
-  questionBox.innerText = questions[id].q;
+  questionBox.innerText = questions[i].q;
 
-  displayButton1.innerText = questions[id].a[0];
-  displayButton2.innerText = questions[id].a[1];
+  displayButton1.innerText = questions[i].a[0];
+  displayButton2.innerText = questions[i].a[1];
 
-  let selected = []
+  
 
   displayButton1.addEventListener("click", () => {
     displayButton1.style.backgroundColor = "green";
-    displayButton2.style.backgroundColor = "lightgoldenrodyellow";
-    selected = displayButton1.value;
-  })
+    displayButton2.style.backgroundColor = "orange";
+    selected = displayButton1.innerText;
+    })
 
   displayButton2.addEventListener("click", () => {
-    displayButton1.style.backgroundColor = "lightgoldenrodyellow";
+    displayButton1.style.backgroundColor = "orange";
     displayButton2.style.backgroundColor = "green";
-    selected = displayButton2.value;
+    selected = displayButton2.innerText;
   })
 
 
@@ -76,19 +74,20 @@ function runQuestionnaire(id) {
 
 
 
-let id = 0;
+let i = 0;
 nextButton.addEventListener('click',() => {
   start = false;
-  if (id < 4) {
-  id++;
-  runQuestionnaire(id);
-  console.log(id);
+  if (i <= questions.length) {
+  i++;
+  runQuestionnaire(i);
   console.log(selected);
+  console.log(i)
+  
   }
 
 })
 
-console.log(selected)
+
 
 
 
@@ -114,15 +113,6 @@ function finalDestination() {
 //let thirdKey = 'Lessons';
 //let forthKey = 'Expertise'
 //resultObject[firstKey] = destinationType;
-
-
-//if (start) {
-//  runQuestionnaire("0");
-//}
-
-
-//
-
 
 
 
