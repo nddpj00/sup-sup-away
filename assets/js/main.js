@@ -1,13 +1,19 @@
+const startButton = document.getElementById('start-btn');
+const questionContainerElement = document.getElementById('question-container');
 
-// on webpage load it sets an event listener on start button and hides the option buttons.
+startButton.addEventListener('click', runQuestionnaire);
 
-document.addEventListener("DOMContentLoaded", function(){
+function runQuestionnaire() {
+  console.log('Am i here??')
+  alert('hello')
+  startButton.classList.add('hide')
+  questionContainerElement.classList.remove('hide')
+}
 
-let startButton = document.getElementById('startButton');
-startButton.addEventListener('click', runQuestionnaire());
-document.getElementById('opt1').style.display = 'none';
-document.getElementById('opt2').style.display = 'none';
-})
+console.log('hellooooooooo')
+/*document.getElementById('opt1').style.display = 'none';
+//document.getElementById('opt2').style.display = 'none';
+
 
 // Questions to be asked
 let questions = [{
@@ -35,28 +41,28 @@ let questions = [{
 
 let start = true;
 
-function runQuestionnaire(id){
+//function runQuestionnaire(id){
   //get the question box
-  let questionBox = document.getElementById('question');
+ // let questionBox = document.getElementById('question');
   
 //get the answer boxes
 
-  let displayButton1 = document.getElementById('opt1');
-  let displayButton2 = document.getElementById('opt2');
+ // let displayButton1 = document.getElementById('opt1');
+ // let displayButton2 = document.getElementById('opt2');
 
 // hides start button
-document.getElementById('startButton').style.display = 'none';
+//document.getElementById('startButton').style.display = 'none';
   
 //getting question from Questions object
 
-questionBox.innerText = questions[id].q;
+//questionBox.innerText = questions[id].q;
 
 //get the answer text
 
-displayButton1.innerText = questions[id].a[0];
-displayButton2.innerText = questions[id].a[1];  
+//displayButton1.innerText = questions[id].a[0];
+//displayButton2.innerText = questions[id].a[1];  
 
-}
+//}
 
 
 
@@ -94,7 +100,7 @@ let nextButton = document.getElementsByClassName('next');
 
 let id = 0;
 
-nextButton.addEventListener('click',() =>{
+//nextButton.addEventListener('click',() =>{
   start = false;
 if (id < 3) {
     id++;
