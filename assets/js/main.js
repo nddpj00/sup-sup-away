@@ -1,18 +1,13 @@
+
+
 const startButton = document.getElementById('start-btn');
 const questionContainerElement = document.getElementById('question-container');
+const questionBox = document.getElementById('question');
+const displayButton1 = document.getElementById('opt1');
+const displayButton2 = document.getElementById('opt2');
+const nextButton = document.getElementById('next-btn');
+const restartButton = document.getElementById('restart-btn');
 
-startButton.addEventListener('click', runQuestionnaire);
-
-function runQuestionnaire() {
-  console.log('Am i here??')
-  alert('hello')
-  startButton.classList.add('hide')
-  questionContainerElement.classList.remove('hide')
-}
-
-console.log('hellooooooooo')
-/*document.getElementById('opt1').style.display = 'none';
-//document.getElementById('opt2').style.display = 'none';
 
 
 // Questions to be asked
@@ -36,34 +31,64 @@ let questions = [{
   q: "Level of expertise?",
   a: ["Beginner", "Expert"]
   }]
-
-// when start button is clicked the for loop iterates, displaying the questions and answers for id objects, plus hiding start button.
-
 let start = true;
 
-//function runQuestionnaire(id){
-  //get the question box
- // let questionBox = document.getElementById('question');
+startButton.addEventListener('click', initQuestionnaire());
+
+function initQuestionnaire(){
+  startButton.classList.add('hide')
+  questionContainerElement.classList.remove('hide')
+  nextButton.classList.remove('hide')
+  restartButton.classList.remove('hide')
+if (start) {
+  runQuestionnaire('0');
+}
+}
+
+
+
+
+function runQuestionnaire(id) {
   
-//get the answer boxes
 
- // let displayButton1 = document.getElementById('opt1');
- // let displayButton2 = document.getElementById('opt2');
+  questionBox.innerText = questions[id].q;
 
-// hides start button
-//document.getElementById('startButton').style.display = 'none';
-  
-//getting question from Questions object
+  displayButton1.innerText = questions[id].a[0];
+  displayButton2.innerText = questions[id].a[1];
 
-//questionBox.innerText = questions[id].q;
+  let selected = []
 
-//get the answer text
+  displayButton1.addEventListener("click", () => {
+    displayButton1.style.backgroundColor = "green";
+    displayButton2.style.backgroundColor = "lightgoldenrodyellow";
+    selected = displayButton1.value;
+  })
 
-//displayButton1.innerText = questions[id].a[0];
-//displayButton2.innerText = questions[id].a[1];  
+  displayButton2.addEventListener("click", () => {
+    displayButton1.style.backgroundColor = "lightgoldenrodyellow";
+    displayButton2.style.backgroundColor = "green";
+    selected = displayButton2.value;
+  })
 
-//}
 
+
+}
+
+
+
+let id = 0;
+nextButton.addEventListener('click',() => {
+  start = false;
+  if (id < 4) {
+  id++;
+  runQuestionnaire(id);
+  console.log(id);
+  console.log(selected);
+  }
+
+})
+
+console.log(selected)
 
 
 
@@ -91,24 +116,14 @@ function finalDestination() {
 //resultObject[firstKey] = destinationType;
 
 
-if (start) {
-  runQuestionnaire("0");
-}
+//if (start) {
+//  runQuestionnaire("0");
+//}
 
 
-let nextButton = document.getElementsByClassName('next');
+//
 
-let id = 0;
 
-//nextButton.addEventListener('click',() =>{
-  start = false;
-if (id < 3) {
-    id++;
-    runQuestionnaire(id);
-    console.log(id);
-    console.log('is this working even?');
-  }
-})
 
 
 
