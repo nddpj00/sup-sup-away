@@ -81,15 +81,26 @@ nextButton.addEventListener('click',() => {
   i++;
   runQuestionnaire(i);
   console.log(selected);
+  //addAnswerToObject(selected[i]);
   console.log(i)
+  displayButton1.style.backgroundColor = 'transparent';
+  displayButton2.style.backgroundColor = 'transparent';
+  console.log(resultArray)
   
   }
 
 })
 
 
-
-
+/*function addAnswerToObject(selected) {
+  let resultArray[];
+  let resultObject = new Object();
+  resultObject.destination = 'selected';
+  resultObject.hire = 'selected';
+  console.log(resultObject)
+  console.log(resultArray);
+}
+*/
 
 function questionOverCheck() {
 
@@ -107,7 +118,7 @@ function finalDestination() {
 
 
 //*user object created from answers
-//let resultObject = new Object();
+//
 //let firstKey = 'Destination';
 //let secondKey = 'Hire';
 //let thirdKey = 'Lessons';
