@@ -73,7 +73,7 @@ section {
 
 .info1 {
     width: 100%;
-    height: 1530px;
+    height: 1500px;
     background-color: #f3f0ef;
 }
 
@@ -137,6 +137,9 @@ section {
     border-radius:25px;
     box-shadow: 0 0 10px 2px;
     padding-top: 20px;
+    background-image: url('/assets/images/questionnaire-background.jpg');
+    background-size: cover;
+    
 }
 
 /*-------------------------------------------------quiz*/
@@ -150,14 +153,21 @@ section {
     height: 500px;
 }*/
 
+#row{
+    margin-right: calc(0 * var(--bs-gutter-x));
+    margin-left: calc(0 * var(--bs-gutter-x));
+}
+
 #question {
-    font-family: dinnextltpro;
-    font-size: 20px;
+    height: 100px;
+    font-family: 'Ranchers', cursive;
+    font-size: 40px;
 }
 
 
-.question-container{
-    height: 200px;
+#question-container{
+    height: 231px;
+    margin-top: 50px;
 }
 
 .start-btn{
@@ -170,26 +180,38 @@ section {
     border-radius: 25px;
     font-family: 'Ranchers', cursive;
     font-size: 40px;
-    --bs-btn-border-color: #0a0a0a;
+    border-color: #0a0a0a;
 }
 
 #restart-btn{
-    --bs-btn-border-color: #0a0a0a;
+    border-color: #0a0a0a;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
+    width: 100px;
 }
 
 #next-btn{
-    --bs-btn-border-color: #0a0a0a;
+    border-color: #0a0a0a;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
+    width: 100px;
 }
 
-.option-container{
-    height: 120px;
-}
 
 #opt1{
-    --bs-btn-border-color: #0a0a0a;
+    border-color: #0a0a0a;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
 }
+
 #opt2{
-    --bs-btn-border-color: #0a0a0a;
+    border-color: #0a0a0a;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
 }
 
 .nav-btn-container{

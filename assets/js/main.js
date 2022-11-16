@@ -83,8 +83,8 @@ nextButton.addEventListener('click',() => {
   console.log(selected);
   //addAnswerToObject(selected[i]);
   console.log(i)
-  displayButton1.style.backgroundColor = 'transparent';
-  displayButton2.style.backgroundColor = 'transparent';
+  displayButton1.style.backgroundColor = 'hsl(27, 88%, 66%);';
+  displayButton2.style.backgroundColor = 'hsl(27, 88%, 66%);';
   console.log(resultArray)
   
   }
