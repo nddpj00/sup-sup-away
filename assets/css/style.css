@@ -7,25 +7,24 @@ section {
     overflow: hidden;
 }
 
-  .topnav a {
+.topnav a {
     
     color: #f3f0ef;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 25px;
-  }
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #f3f0ef;
     color: black;
-  }
+}
 
-  .navcontainer {
+.navcontainer {
     position: absolute;
     margin: 20px;
     width: auto;
-
 }
 
 #hero-image {
@@ -179,6 +178,8 @@ section {
     font-family: 'Ranchers', cursive;
     font-size: 40px;
     border-color: #0a0a0a;
+    margin-top: 180px;
+    background-color: hsl(27, 88%, 66%);
 }
 
 #restart-btn{

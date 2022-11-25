@@ -11,7 +11,7 @@ const restartButton = document.getElementById('restart-btn');
 
 
 // Questions to be asked
-let questions = [{
+const questions = [{
   id:0,
   q: "Where would you like to paddle?",
   a: ["Sea", "Lake"],
@@ -32,27 +32,47 @@ let questions = [{
   a: ["Beginner", "Expert"]
   }]
 
-let start = true;
+//let start = true;
 
-startButton.addEventListener('click', initQuestionnaire());
+startButton.addEventListener('click', initQuestionnaire);
 
 function initQuestionnaire(){
-  startButton.classList.add('hide')
-  questionContainerElement.classList.remove('hide')
-  nextButton.classList.remove('hide')
-  restartButton.classList.remove('hide')
-if (start) {
-  runQuestionnaire('0');
-}
+startButton.classList.add('hide');
+runQuestionnaire();
 }
 
-function runQuestionnaire(i) {
+
+function runQuestionnaire() {
+  questionContainerElement.classList.remove('hide');
+  nextButton.classList.remove('hide');
+  restartButton.classList.remove('hide');
+  iterateQuestions();
+}
+
+function iterateQuestions(){
+ for(let i in questions){
+    questionBox.innerHTML = questions[i].q;
+    currentQ =  questions[i].q;
+    console.log(currentQ);
+    return currentQ;
+  }
+    
+}
+
+function nextQuestion(){
+nextButton.addEventListener('click', iterateQuestions())
+}
+//,() => {
+//      iterateQuestions(); })
+
+/*
   
 
-  questionBox.innerText = questions[i].q;
+  
+  
 
-  displayButton1.innerText = questions[i].a[0];
-  displayButton2.innerText = questions[i].a[1];
+  displayButton1.innerText = questions.q;
+  displayButton2.innerText = questions[question].a[1];
 
   
 
@@ -67,29 +87,27 @@ function runQuestionnaire(i) {
     displayButton2.style.backgroundColor = "green";
     selected = displayButton2.innerText;
   })
-
-
-
 }
 
 
 
-let i = 0;
-nextButton.addEventListener('click',() => {
+('click',() => {
   start = false;
-  if (i <= questions.length) {
-  i++;
-  runQuestionnaire(i);
+  
+  
+  runQuestionnaire(question.q);
   console.log(selected);
   //addAnswerToObject(selected[i]);
-  console.log(i)
+  console.log(question.q)
   displayButton1.style.backgroundColor = 'hsl(27, 88%, 66%);';
   displayButton2.style.backgroundColor = 'hsl(27, 88%, 66%);';
-  console.log(resultArray)
+  
   
   }
 
 })
+
+
 
 
 /*function addAnswerToObject(selected) {
