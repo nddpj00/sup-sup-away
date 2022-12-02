@@ -7,7 +7,7 @@ const displayButton1 = document.getElementById('opt1');
 const displayButton2 = document.getElementById('opt2');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
-
+const resultText = document.getElementsByClassName('result');
 
 
 // Questions to be asked
@@ -32,9 +32,10 @@ const questions = [{
   a: ["Beginner", "Expert"]
   }]
 
-//let start = true;
+let start = true;
 
 startButton.addEventListener('click', initQuestionnaire);
+restartButton.addEventListener('click', initQuestionnaire);
 
 function initQuestionnaire(){
 startButton.classList.add('hide');
@@ -46,54 +47,83 @@ function runQuestionnaire() {
   questionContainerElement.classList.remove('hide');
   nextButton.classList.remove('hide');
   restartButton.classList.remove('hide');
-  iterateQuestions();
+  iterateQuestions(id);
 }
 
-function iterateQuestions(){
- for(let i in questions){
-    questionBox.innerHTML = questions[i].q;
-    currentQ =  questions[i].q;
-    console.log(currentQ);
-    return currentQ;
-  }
-    
-}
+function iterateQuestions(id){
+ 
+    questionBox.innerHTML = questions[id].q;
+    displayButton1.innerHTML = questions[id].a[0];
+    displayButton2.innerHTML = questions[id].a[1];
+    }
 
-function nextQuestion(){
-nextButton.addEventListener('click', iterateQuestions())
-}
-//,() => {
-//      iterateQuestions(); })
+    var selected ="";
 
-/*
-  
-
-  
-  
-
-  displayButton1.innerText = questions.q;
-  displayButton2.innerText = questions[question].a[1];
-
-  
-
-  displayButton1.addEventListener("click", () => {
+    displayButton1.addEventListener("click", () => {
     displayButton1.style.backgroundColor = "green";
     displayButton2.style.backgroundColor = "orange";
     selected = displayButton1.innerText;
     })
 
-  displayButton2.addEventListener("click", () => {
+    displayButton2.addEventListener("click", () => {
     displayButton1.style.backgroundColor = "orange";
     displayButton2.style.backgroundColor = "green";
     selected = displayButton2.innerText;
+    })
+
+    let id ="0";
+    nextButton.addEventListener("click", () => {
+      start = false;
+      if (id < 4) {
+          id++;
+          iterateQuestions(id);
+          //console.log(id);
+          createUserDestObj(selected,id);
+      }else{
+        finalDestination();
+      }
+   
   })
+
+function finalDestination() {
+  questionContainerElement.classList.add('hide');
+  nextButton.classList.add('hide');
+  restartButton.classList.add('hide');
+  resultText.classList.remove('hide');
+}
+
+function createUserDestObj(selected, id) {
+let resultObject = new Object();
+
+if (id === 0){
+resultObject.destination = selected;
+}else if (id === 1){
+resultObject.hire = selected;  
+}else if (id === 2){
+ resultObject.lessons = selected; 
+}else{
+  resultObject.expertise = selected;
+}
+
+console.log(resultObject)
+ } 
+
+/*
+    
+
+
+function nextQuestion(){
+nextButton.addEventListener('click', iterateQuestions())
 }
 
 
-
-('click',() => {
-  start = false;
   
+
+  
+
+
+
+
   
   runQuestionnaire(question.q);
   console.log(selected);
@@ -112,7 +142,7 @@ nextButton.addEventListener('click', iterateQuestions())
 
 /*function addAnswerToObject(selected) {
   let resultArray[];
-  let resultObject = new Object();
+  
   resultObject.destination = 'selected';
   resultObject.hire = 'selected';
   console.log(resultObject)
@@ -124,13 +154,9 @@ function questionOverCheck() {
 
 }
 
-function restartQuestionnaire() {
 
-}
+ 
 
-function finalDestination() {
-
-}
 
 
 
