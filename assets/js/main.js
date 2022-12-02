@@ -32,7 +32,8 @@ const questions = [{
   a: ["Beginner", "Expert"]
   }]
 
-let start = true;
+//let start = true;
+var selected ="";
 
 startButton.addEventListener('click', initQuestionnaire);
 restartButton.addEventListener('click', initQuestionnaire);
@@ -55,30 +56,34 @@ function iterateQuestions(id){
     questionBox.innerHTML = questions[id].q;
     displayButton1.innerHTML = questions[id].a[0];
     displayButton2.innerHTML = questions[id].a[1];
-    }
+    
 
-    var selected ="";
+    
 
     displayButton1.addEventListener("click", () => {
     displayButton1.style.backgroundColor = "green";
-    displayButton2.style.backgroundColor = "orange";
+    displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
     selected = displayButton1.innerText;
     })
 
     displayButton2.addEventListener("click", () => {
-    displayButton1.style.backgroundColor = "orange";
+    displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
     displayButton2.style.backgroundColor = "green";
     selected = displayButton2.innerText;
     })
+    
+  }
 
     let id ="0";
     nextButton.addEventListener("click", () => {
-      start = false;
-      if (id < 4) {
+      //start = false;
+      if (id <= 3) {
           id++;
           iterateQuestions(id);
           //console.log(id);
           createUserDestObj(selected,id);
+          displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
+          displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
       }else{
         finalDestination();
       }
@@ -92,21 +97,20 @@ function finalDestination() {
   resultText.classList.remove('hide');
 }
 
-function createUserDestObj(selected, id) {
-let resultObject = new Object();
 
-if (id === 0){
-resultObject.destination = selected;
-}else if (id === 1){
-resultObject.hire = selected;  
-}else if (id === 2){
- resultObject.lessons = selected; 
-}else{
-  resultObject.expertise = selected;
+// creates a new object from users selections
+let resultObject = new Object();
+function createUserDestObj(userAnswer, id) {
+
+if (id === 1){resultObject.destination = userAnswer};
+if (id === 2){resultObject.hire = userAnswer};
+if (id === 3){resultObject.lessons = userAnswer}; 
+if (id === 4){resultObject.expertise = userAnswer};
+return resultObject
 }
 
 console.log(resultObject)
- } 
+ 
 
 /*
     
