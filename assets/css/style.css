@@ -223,6 +223,13 @@ section {
 }
 
 
+#result{
+    margin-top: 40%;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
+}
+
 
 /*-------------------------------------------------------map*/
 

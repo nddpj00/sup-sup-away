@@ -7,32 +7,32 @@ const displayButton1 = document.getElementById('opt1');
 const displayButton2 = document.getElementById('opt2');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
-const resultText = document.getElementsByClassName('result');
+const resultText = document.getElementById('result');
 
 
 // Questions to be asked
 const questions = [{
-  id:0,
+  id:1,
   q: "Where would you like to paddle?",
   a: ["Sea", "Lake"],
   },
 
-  {id:1,
+  {id:2,
   q: "Do you need to hire equipment?",
   a: ["Yes", "No"]
   },
 
-  {id:2,
+  {id:3,
   q: "Are you wanting to take some lessons?",
   a: ["Yes", "No"]
   },
 
-  {id:3,
+  {id:4,
   q: "Level of expertise?",
   a: ["Beginner", "Expert"]
   }]
 
-//let start = true;
+
 var selected ="";
 
 startButton.addEventListener('click', initQuestionnaire);
@@ -48,7 +48,7 @@ function runQuestionnaire() {
   questionContainerElement.classList.remove('hide');
   nextButton.classList.remove('hide');
   restartButton.classList.remove('hide');
-  iterateQuestions(id);
+  iterateQuestions(0);
 }
 
 function iterateQuestions(id){
@@ -56,8 +56,6 @@ function iterateQuestions(id){
     questionBox.innerHTML = questions[id].q;
     displayButton1.innerHTML = questions[id].a[0];
     displayButton2.innerHTML = questions[id].a[1];
-    
-
     
 
     displayButton1.addEventListener("click", () => {
@@ -72,23 +70,25 @@ function iterateQuestions(id){
     selected = displayButton2.innerText;
     })
     
+
   }
 
-    let id ="0";
+    let id = 0;
     nextButton.addEventListener("click", () => {
       //start = false;
-      if (id <= 3) {
-          id++;
-          iterateQuestions(id);
-          //console.log(id);
+      id++;
+      if (id <= questions.length) {
+          
+          console.log(id, selected);
           createUserDestObj(selected,id);
+          iterateQuestions(id);
           displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
           displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+          
       }else{
         finalDestination();
-      }
-   
-  })
+      }});
+  
 
 function finalDestination() {
   questionContainerElement.classList.add('hide');
@@ -110,71 +110,12 @@ return resultObject
 }
 
 console.log(resultObject)
- 
-
-/*
-    
 
 
-function nextQuestion(){
-nextButton.addEventListener('click', iterateQuestions())
-}
-
-
-  
-
-  
-
-
-
-
-  
-  runQuestionnaire(question.q);
-  console.log(selected);
-  //addAnswerToObject(selected[i]);
-  console.log(question.q)
-  displayButton1.style.backgroundColor = 'hsl(27, 88%, 66%);';
-  displayButton2.style.backgroundColor = 'hsl(27, 88%, 66%);';
-  
-  
-  }
-
-})
-
-
-
-
-/*function addAnswerToObject(selected) {
-  let resultArray[];
-  
-  resultObject.destination = 'selected';
-  resultObject.hire = 'selected';
-  console.log(resultObject)
-  console.log(resultArray);
-}
-*/
 
 function questionOverCheck() {
 
 }
-
-
- 
-
-
-
-
-
-//*user object created from answers
-//
-//let firstKey = 'Destination';
-//let secondKey = 'Hire';
-//let thirdKey = 'Lessons';
-//let forthKey = 'Expertise'
-//resultObject[firstKey] = destinationType;
-
-
-
 
 // Map code
 

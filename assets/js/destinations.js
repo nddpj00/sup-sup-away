@@ -14,7 +14,7 @@ function Location(name, destination, hire, lessons, expertise, website) {
 
 let jossbaySurfSchool = new Location('Joss Bay Surf School', 'sea', true, true, 'beginner', 'https://www.jossbay.co.uk/');
 const jossJSON = JSON.stringify(jossbaySurfSchool);
-console.log(jossJSON)
+
 
 let kentSurfSchool = new Location('Kent Surf School', 'sea', true, true, 'beginner','https://kentsurfschool.co.uk/');
 const kentJSON = JSON.stringify(kentSurfSchool);
@@ -26,7 +26,10 @@ let paddleboardingLondon = new Location('Paddleboarding London', 'lake', true, t
 const paddJSON = JSON.stringify(paddleboardingLondon);
 
 // test objects
-let testLocation = new Location('text Location', lake, false, false, 'beginner', www.test.com)
+let testLocation = new Location('text Location', 'lake', false, false, 'beginner', 'www.test.com')
 const testOneJSON = JSON.stringify(testLocation);
-let testLocation2 = new Location('test location 2 ', sea, false, true, 'expert', www.infofin.com)
+let testLocation2 = new Location('test location 2 ', 'sea', false, true, 'expert', 'www.infofin.com')
 const testTwoJSON = JSON.stringify(testLocation);
+
+
+console.log(canoeWild)
