@@ -30,8 +30,49 @@ const questions = [{
   {id:4,
   q: "Level of expertise?",
   a: ["Beginner", "Expert"]
-  }]
+  }];
 
+
+  let locationArry = [
+
+
+    { 'name' :'Joss Bay Surf School',
+      'destination' :'sea',
+      'hire': true,
+      'lessons' :true,
+      'expertise' : 'beginner',
+      'website' : 'https://www.jossbay.co.uk/'},
+    
+    { 'name' :'Canoe Wild',
+      'destination' :'lake',
+      'hire': true,
+      'lessons' :true,
+      'expertise' : 'beginner',
+      'website' : 'https://www.canoewild.co.uk/courses-lessons'},
+    
+      { 'name' :'Paddleboarding London',
+      'destination' :'lake',
+      'hire': true,
+      'lessons' :true,
+      'expertise' : 'beginner',
+      'website' : 'https://paddleboardinglondon.co.uk/'},
+    
+      { 'name' :'test location1',
+      'destination' :'lake',
+      'hire': false,
+      'lessons' :false,
+      'expertise' : 'beginner',
+      'website' : 'www.test.com'},
+    
+      { 'name' :'test location 2',
+      'destination' :'sea',
+      'hire': false,
+      'lessons' :true,
+      'expertise' : 'expert',
+      'website' : 'www.infofin.com'},
+    ]
+    
+    
 
 var selected ="";
 
@@ -68,7 +109,7 @@ function iterateQuestions(id){
     displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
     displayButton2.style.backgroundColor = "green";
     selected = displayButton2.innerText;
-    })
+    });
     
 
   }
@@ -95,6 +136,8 @@ function finalDestination() {
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
+
+  
 }
 
 
@@ -102,14 +145,26 @@ function finalDestination() {
 let resultObject = new Object();
 function createUserDestObj(userAnswer, id) {
 
-if (id === 1){resultObject.destination = userAnswer};
-if (id === 2){resultObject.hire = userAnswer};
-if (id === 3){resultObject.lessons = userAnswer}; 
-if (id === 4){resultObject.expertise = userAnswer};
-return resultObject
+if (id === 1){resultObject.destination = userAnswer;}
+if (id === 2){resultObject.hire = userAnswer;}
+if (id === 3){resultObject.lessons = userAnswer;}
+if (id === 4){resultObject.expertise = userAnswer;}
+return resultObject;
 }
+console.log(resultObject);
 
-console.log(resultObject)
+let userResult = locationArry.forEach(({name, destination, hire, lessons, expertise, website})=>{
+if (destination === resultObject.destination && 
+hire === resultObject.hire &&
+lessons === resultObject.lessons &&
+expertise === resultObject.expertise)
+
+{return name;
+console.log(name)}
+});
+
+
+
 
 
 
