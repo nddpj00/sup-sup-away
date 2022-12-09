@@ -36,40 +36,40 @@ const questions = [{
   let locationArry = [
 
 
-    { 'name' :'Joss Bay Surf School',
-      'destination' :'sea',
-      'hire': true,
-      'lessons' :true,
-      'expertise' : 'beginner',
-      'website' : 'https://www.jossbay.co.uk/'},
+    { name :'Joss Bay Surf School',
+      destination :'sea',
+      hire: 'yes',
+      lessons :'yes',
+      expertise : 'beginner',
+      website : 'https://www.jossbay.co.uk/'},
     
-    { 'name' :'Canoe Wild',
-      'destination' :'lake',
-      'hire': true,
-      'lessons' :true,
-      'expertise' : 'beginner',
-      'website' : 'https://www.canoewild.co.uk/courses-lessons'},
+    { name :'Canoe Wild',
+      destination :'lake',
+      hire: 'yes',
+      lessons :'yes',
+      expertise : 'beginner',
+      website : 'https://www.canoewild.co.uk/courses-lessons'},
     
-      { 'name' :'Paddleboarding London',
-      'destination' :'lake',
-      'hire': true,
-      'lessons' :true,
-      'expertise' : 'beginner',
-      'website' : 'https://paddleboardinglondon.co.uk/'},
+      { name :'Paddleboarding London',
+      destination :'lake',
+      hire: 'yes',
+      lessons :'yes',
+      expertise : 'beginner',
+      website : 'https://paddleboardinglondon.co.uk/'},
     
-      { 'name' :'test location1',
-      'destination' :'lake',
-      'hire': false,
-      'lessons' :false,
-      'expertise' : 'beginner',
-      'website' : 'www.test.com'},
+      { name :'test location1',
+      destination :'lake',
+      hire: 'no',
+      lessons :'no',
+      expertise : 'beginner',
+      website : 'www.test.com'},
     
-      { 'name' :'test location 2',
-      'destination' :'sea',
-      'hire': false,
-      'lessons' :true,
-      'expertise' : 'expert',
-      'website' : 'www.infofin.com'},
+      { name :'test location 2',
+      destination :'sea',
+      hire: 'no',
+      lessons :'yes',
+      expertise : 'expert',
+      website : 'www.infofin.com'},
     ]
     
     
@@ -116,7 +116,7 @@ function iterateQuestions(id){
 
     let id = 0;
     nextButton.addEventListener("click", () => {
-      //start = false;
+      
       id++;
       if (id <= questions.length) {
           
@@ -136,9 +136,8 @@ function finalDestination() {
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
-
-  
-}
+  document.getElementById('result').innerHTML += matchedIndices;
+ }
 
 
 // creates a new object from users selections
@@ -153,15 +152,22 @@ return resultObject;
 }
 console.log(resultObject);
 
-let userResult = locationArry.forEach(({name, destination, hire, lessons, expertise, website})=>{
-if (destination === resultObject.destination && 
-hire === resultObject.hire &&
-lessons === resultObject.lessons &&
-expertise === resultObject.expertise)
 
-{return name;
-console.log(name)}
-});
+
+let matchedIndices = [];
+userDataString = JSON.stringify(resultObject);
+
+for (let i = 0; i < locationArry.length; i++) {
+    // create duplicate and delete fields
+    let duplicateObject = { ...locationArry[i] };
+    delete duplicateObject.name;
+    delete duplicateObject.website;
+
+    // convert and compare
+    if (userDataString === JSON.stringify(duplicateObject)) {
+        matchedIndices.push(i);
+    }
+}
 
 
 
