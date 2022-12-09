@@ -42,39 +42,38 @@ const questions = [{
       lessons :'yes',
       expertise : 'beginner',
       website : 'https://www.jossbay.co.uk/'},
-    
+
     { name :'Canoe Wild',
       destination :'lake',
       hire: 'yes',
       lessons :'yes',
       expertise : 'beginner',
       website : 'https://www.canoewild.co.uk/courses-lessons'},
-    
+
       { name :'Paddleboarding London',
       destination :'lake',
       hire: 'yes',
       lessons :'yes',
       expertise : 'beginner',
       website : 'https://paddleboardinglondon.co.uk/'},
-    
+
       { name :'test location1',
       destination :'lake',
       hire: 'no',
       lessons :'no',
       expertise : 'beginner',
       website : 'www.test.com'},
-    
+
       { name :'test location 2',
       destination :'sea',
       hire: 'no',
       lessons :'yes',
       expertise : 'expert',
       website : 'www.infofin.com'},
-    ]
-    
-    
+    ];
 
-var selected ="";
+
+let selected ="";
 
 startButton.addEventListener('click', initQuestionnaire);
 restartButton.addEventListener('click', initQuestionnaire);
@@ -93,51 +92,47 @@ function runQuestionnaire() {
 }
 
 function iterateQuestions(id){
- 
-    questionBox.innerHTML = questions[id].q;
-    displayButton1.innerHTML = questions[id].a[0];
-    displayButton2.innerHTML = questions[id].a[1];
-    
 
-    displayButton1.addEventListener("click", () => {
-    displayButton1.style.backgroundColor = "green";
-    displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
-    selected = displayButton1.innerText;
-    })
+  questionBox.innerHTML = questions[id].q;
+  displayButton1.innerHTML = questions[id].a[0];
+  displayButton2.innerHTML = questions[id].a[1];
 
-    displayButton2.addEventListener("click", () => {
+
+  displayButton1.addEventListener("click", () => {
+  displayButton1.style.backgroundColor = "green";
+  displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+  selected = displayButton1.innerText;
+  });
+
+  displayButton2.addEventListener("click", () => {
+  displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
+  displayButton2.style.backgroundColor = "green";
+  selected = displayButton2.innerText;
+  });
+}
+
+let id = 0;
+nextButton.addEventListener("click", () => {
+
+  id++;
+  if (id <= questions.length) {
+    console.log(id, selected);
+    createUserDestObj(selected,id);
+    iterateQuestions(id);
     displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
-    displayButton2.style.backgroundColor = "green";
-    selected = displayButton2.innerText;
-    });
-    
+    displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+  }else{
+    finalDestination();
+}});
 
-  }
-
-    let id = 0;
-    nextButton.addEventListener("click", () => {
-      
-      id++;
-      if (id <= questions.length) {
-          
-          console.log(id, selected);
-          createUserDestObj(selected,id);
-          iterateQuestions(id);
-          displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
-          displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
-          
-      }else{
-        finalDestination();
-      }});
-  
 
 function finalDestination() {
   questionContainerElement.classList.add('hide');
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
-  document.getElementById('result').innerHTML += matchedIndices;
- }
+  document.getElementById('result').innerHTML += compareLocation();
+}
 
 
 // creates a new object from users selections
@@ -152,26 +147,24 @@ return resultObject;
 }
 console.log(resultObject);
 
-
+function compareLocation(){
 
 let matchedIndices = [];
-userDataString = JSON.stringify(resultObject);
+let userDataString = JSON.stringify(resultObject);
 
 for (let i = 0; i < locationArry.length; i++) {
-    // create duplicate and delete fields
-    let duplicateObject = { ...locationArry[i] };
-    delete duplicateObject.name;
-    delete duplicateObject.website;
+  // create duplicate and delete fields
+  let duplicateObject = { ...locationArry[i]};
+  delete duplicateObject.name;
+  delete duplicateObject.website;
 
     // convert and compare
-    if (userDataString === JSON.stringify(duplicateObject)) {
-        matchedIndices.push(i);
-    }
+  if (userDataString === JSON.stringify(duplicateObject)) {
+  matchedIndices.push(i);
+  }
 }
-
-
-
-
+return matchedIndices;
+}
 
 
 function questionOverCheck() {
