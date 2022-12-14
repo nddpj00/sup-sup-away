@@ -32,58 +32,61 @@ const questions = [{
   a: ["Beginner", "Expert"]
   }];
 
-
-  let locationArry = [
+// Array of Object containing locations
+  let locationArray = [
 
 
     { name :'Joss Bay Surf School',
-      destination :'sea',
-      hire: 'yes',
-      lessons :'yes',
-      expertise : 'beginner',
+      destination :'Sea',
+      hire: 'Yes',
+      lessons :'Yes',
+      expertise : 'Beginner',
       website : 'https://www.jossbay.co.uk/'},
 
     { name :'Canoe Wild',
-      destination :'lake',
-      hire: 'yes',
-      lessons :'yes',
-      expertise : 'beginner',
+      destination :'Lake',
+      hire: 'Yes',
+      lessons :'Yes',
+      expertise : 'Beginner',
       website : 'https://www.canoewild.co.uk/courses-lessons'},
 
       { name :'Paddleboarding London',
-      destination :'lake',
-      hire: 'yes',
-      lessons :'yes',
-      expertise : 'beginner',
+      destination :'Lake',
+      hire: 'Yes',
+      lessons :'Yes',
+      expertise : 'Beginner',
       website : 'https://paddleboardinglondon.co.uk/'},
 
       { name :'test location1',
-      destination :'lake',
-      hire: 'no',
-      lessons :'no',
-      expertise : 'beginner',
+      destination :'Lake',
+      hire: 'No',
+      lessons :'No',
+      expertise : 'Beginner',
       website : 'www.test.com'},
 
       { name :'test location 2',
-      destination :'sea',
-      hire: 'no',
-      lessons :'yes',
-      expertise : 'expert',
+      destination :'Sea',
+      hire: 'No',
+      lessons :'Yes',
+      expertise : 'Expert',
       website : 'www.infofin.com'},
     ];
 
 
 let selected ="";
 
+
 startButton.addEventListener('click', initQuestionnaire);
 restartButton.addEventListener('click', initQuestionnaire);
 
+
+// hides start button and initiates runQuestionnaire function
 function initQuestionnaire(){
 startButton.classList.add('hide');
 runQuestionnaire();
 }
 
-
+// question container and navigation buttons appear and iterates through questions
 function runQuestionnaire() {
   questionContainerElement.classList.remove('hide');
   nextButton.classList.remove('hide');
@@ -91,6 +94,7 @@ function runQuestionnaire() {
   iterateQuestions(0);
 }
 
+// generates questions and applies colour to selected
 function iterateQuestions(id){
 
   questionBox.innerHTML = questions[id].q;
@@ -111,6 +115,7 @@ function iterateQuestions(id){
   });
 }
 
+// loop for questions and takes user selection to create new object 
 let id = 0;
 nextButton.addEventListener("click", () => {
 
@@ -147,28 +152,31 @@ return resultObject;
 }
 console.log(resultObject);
 
+
+/* stringifies user selections (resultObject) and creates duplicate, 
+removing name and website keys. Then compares duplicate to stringified locationArry*/
+
 function compareLocation(){
 
 let matchedIndices = [];
 let userDataString = JSON.stringify(resultObject);
-
-for (let i = 0; i < locationArry.length; i++) {
+console.log(userDataString);
+for (let i = 0; i < locationArray.length; i++) {
   // create duplicate and delete fields
-  let duplicateObject = { ...locationArry[i]};
+  let duplicateObject = { ...locationArray[i]};
   delete duplicateObject.name;
   delete duplicateObject.website;
-
+console.log(JSON.stringify(duplicateObject))
     // convert and compare
   if (userDataString === JSON.stringify(duplicateObject)) {
   matchedIndices.push(i);
+  console.log(matchedIndices)
   }
 }
-return matchedIndices;
 }
 
 
 function questionOverCheck() {
-
 }
 
 // Map code
