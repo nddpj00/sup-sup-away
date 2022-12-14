@@ -120,9 +120,9 @@ let id = 0;
 nextButton.addEventListener("click", () => {
 
   id++;
-  if (id <= questions.length) {
+  createUserDestObj(selected,id);
+  if (id <= questions.length -1) {
     console.log(id, selected);
-    createUserDestObj(selected,id);
     iterateQuestions(id);
     displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
     displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
@@ -160,13 +160,13 @@ function compareLocation(){
 
 let matchedIndices = [];
 let userDataString = JSON.stringify(resultObject);
-console.log(userDataString);
+
 for (let i = 0; i < locationArray.length; i++) {
   // create duplicate and delete fields
   let duplicateObject = { ...locationArray[i]};
   delete duplicateObject.name;
   delete duplicateObject.website;
-console.log(JSON.stringify(duplicateObject))
+
     // convert and compare
   if (userDataString === JSON.stringify(duplicateObject)) {
   matchedIndices.push(i);
