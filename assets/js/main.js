@@ -32,45 +32,7 @@ const questions = [{
   a: ["Beginner", "Expert"]
   }];
 
-// Array of Object containing locations
-  let locationArray = [
 
-
-    { name :'Joss Bay Surf School',
-      destination :'Sea',
-      hire: 'Yes',
-      lessons :'Yes',
-      expertise : 'Beginner',
-      website : 'https://www.jossbay.co.uk/'},
-
-    { name :'Canoe Wild',
-      destination :'Lake',
-      hire: 'Yes',
-      lessons :'Yes',
-      expertise : 'Beginner',
-      website : 'https://www.canoewild.co.uk/courses-lessons'},
-
-      { name :'Paddleboarding London',
-      destination :'Lake',
-      hire: 'Yes',
-      lessons :'Yes',
-      expertise : 'Beginner',
-      website : 'https://paddleboardinglondon.co.uk/'},
-
-      { name :'test location1',
-      destination :'Lake',
-      hire: 'No',
-      lessons :'No',
-      expertise : 'Beginner',
-      website : 'www.test.com'},
-
-      { name :'test location 2',
-      destination :'Sea',
-      hire: 'No',
-      lessons :'Yes',
-      expertise : 'Expert',
-      website : 'www.infofin.com'},
-    ];
 
 
 let selected ="";
@@ -136,8 +98,13 @@ function finalDestination() {
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
-  document.getElementById('result').innerHTML += compareLocation();
-}
+ 
+  let matchedIndicesArray = compareLocation();
+  console.log(matchedIndicesArray)
+   document.getElementById('result').innerHTML += matchedIndicesArray;
+
+  }
+
 
 
 // creates a new object from users selections
@@ -170,14 +137,28 @@ for (let i = 0; i < locationArray.length; i++) {
     // convert and compare
   if (userDataString === JSON.stringify(duplicateObject)) {
   matchedIndices.push(i);
-  console.log(matchedIndices)
+    }
+}
+return matchedIndices;
+}
+
+
+/*getMatchedNames(locationArray, compareLocation);
+console.log(matchedName)
+
+function getMatchedNames(object1,array1) {
+	let output=[];
+  
+	array1.forEach(myFunction);
+  function myFunction(item){
+    output.push(object1[array1]['name'])
   }
-}
-}
 
-
-function questionOverCheck() {
+	console.log(output) 
+return output;
 }
+*/
+
 
 // Map code
 
