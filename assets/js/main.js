@@ -98,11 +98,26 @@ function finalDestination() {
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
- 
+  
+  //create empty array ready for names that match user criteria
+  let finalUserDestination = [];
+  
+  //contains the indexs of the locations that match the users criteria
   let matchedIndicesArray = compareLocation();
   console.log(matchedIndicesArray)
-   document.getElementById('result').innerHTML += matchedIndicesArray;
 
+  // creates an array of the location array name values
+  let destNames = locationArray.map(object => object.name);
+  console.log(destNames)
+
+  //loops the machedIndicesArray pushing each selection to new array 'finalUserDestination'
+  for(i=0; i < matchedIndicesArray.length ; i++){
+    finalUserDestination.push(destNames[matchedIndicesArray[i]])
+  console.log(finalUserDestination)
+}
+
+
+  document.getElementById('result').innerHTML += finalUserDestination;
   }
 
 

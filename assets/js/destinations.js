@@ -2,38 +2,45 @@
 let locationArray = [
 
 
-    { name :'Joss Bay Surf School',
+      {name :'Joss Bay Surf School',
       destination :'Sea',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
       website : 'https://www.jossbay.co.uk/'},
 
-    { name :'Canoe Wild',
+      {name :'Canoe Wild',
       destination :'Lake',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
       website : 'https://www.canoewild.co.uk/courses-lessons'},
 
-      { name :'Paddleboarding London',
+      {name :'Paddleboarding London',
       destination :'Lake',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
       website : 'https://paddleboardinglondon.co.uk/'},
 
-      { name :'test location1',
+      {name :'test location1',
       destination :'Lake',
       hire: 'No',
       lessons :'No',
       expertise : 'Beginner',
       website : 'www.test.com'},
 
-      { name :'test location 2',
+      {name :'test location 2',
       destination :'Sea',
       hire: 'No',
       lessons :'Yes',
       expertise : 'Expert',
       website : 'www.infofin.com'},
+
+      {name :'test location 3',
+      destination :'Lake',
+      hire: 'Yes',
+      lessons :'Yes',
+      expertise : 'Beginner',
+      website : 'www.infofinddd.com'},
     ];
