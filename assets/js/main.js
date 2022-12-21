@@ -102,13 +102,19 @@ function iterateQuestions(id){
 // loop for questions and takes user selection to create new object 
 let id = 0;
 nextButton.addEventListener("click", () => {
+id++;  
+ createUserDestObj(selected,id);  
 
-  id++;
-  createUserDestObj(selected,id);
-  if (id <= questions.length -1) {
-    console.log(id, selected);
-    iterateQuestions(id);
-
+ //checks for selection and if none made alert triggered
+if(displayButton1.style.backgroundColor !== 'green' &&
+    displayButton2.style.backgroundColor !== 'green' &&
+    displayButton3.style.backgroundColor !== 'green'){
+    alert('Oops, dont forget to make a selection before clicking next.'); id--}
+    
+else if(id <= questions.length -1){
+  console.log(id, selected);
+  iterateQuestions(id);
+    
 //returns background colour to orange    
     displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
     displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
@@ -141,7 +147,7 @@ function finalDestination() {
   console.log(finalUserDestination)
 }
 
-  document.getElementById('result').innerHTML += finalUserDestination.join('<br/>');
+  document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
   }
 
 

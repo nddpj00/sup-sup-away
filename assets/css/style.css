@@ -141,14 +141,7 @@ section {
 
 /*-------------------------------------------------quiz*/
 
-/*#quiz {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}*/
+
 
 #row{
     margin-right: calc(0 * var(--bs-gutter-x));
@@ -231,11 +224,22 @@ section {
 
 
 #result{
-    margin-top: 40%;
     font-family: 'Ranchers', cursive;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
+    height :400px;
+    margin: auto;
+    letter-spacing: 0.05em;
+    border-radius: 25px;
 }
+
+#result-text {
+    color: #f3f0ef;
+    letter-spacing: 0.1em;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
 
 
 /*-------------------------------------------------------map*/
@@ -249,7 +253,7 @@ section {
 .footer-bottom {
     margin: auto;
     width: 100%;
-    background-color:#f3f0ef;;
+    background-color:#f3f0ef;
     bottom: 0;
     left: 0;
     position: relative;
