@@ -10,14 +10,14 @@ let locationArray = [
       website : 'https://www.jossbay.co.uk/'},
 
       {name :'Canoe Wild',
-      destination :'Lake',
+      destination :'River',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
       website : 'https://www.canoewild.co.uk/courses-lessons'},
 
       {name :'Paddleboarding London',
-      destination :'Lake',
+      destination :'River',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
@@ -39,6 +39,13 @@ let locationArray = [
 
       {name :'test location 3',
       destination :'Lake',
+      hire: 'Yes',
+      lessons :'Yes',
+      expertise : 'Beginner',
+      website : 'www.infofinddd.com'},
+
+      {name :'test location 4',
+      destination :'River',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',

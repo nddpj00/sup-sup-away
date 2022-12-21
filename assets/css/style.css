@@ -213,6 +213,13 @@ section {
     background-color: hsl(27, 88%, 66%);
 }
 
+#opt3{
+    border-color: #0a0a0a;
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    background-color: hsl(27, 88%, 66%);
+}
+
 .nav-btn-container{
     margin: 50px 0;
 

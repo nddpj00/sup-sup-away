@@ -5,6 +5,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionBox = document.getElementById('question');
 const displayButton1 = document.getElementById('opt1');
 const displayButton2 = document.getElementById('opt2');
+const displayButton3 = document.getElementById('opt3');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const resultText = document.getElementById('result');
@@ -14,7 +15,7 @@ const resultText = document.getElementById('result');
 const questions = [{
   id:1,
   q: "Where would you like to paddle?",
-  a: ["Sea", "Lake"],
+  a: ["Sea", "Lake", "River"],
   },
 
   {id:2,
@@ -39,7 +40,7 @@ let selected ="";
 
 
 startButton.addEventListener('click', initQuestionnaire);
-restartButton.addEventListener('click', initQuestionnaire);
+restartButton.addEventListener('click', function(){location.reload()})
 
 
 // hides start button and initiates runQuestionnaire function
@@ -56,25 +57,46 @@ function runQuestionnaire() {
   iterateQuestions(0);
 }
 
-// generates questions and applies colour to selected
+
+function restartQuest(){
+
+}
+
+// generates questions and answer option,  applying colour to selected
 function iterateQuestions(id){
+  
 
   questionBox.innerHTML = questions[id].q;
   displayButton1.innerHTML = questions[id].a[0];
   displayButton2.innerHTML = questions[id].a[1];
-
+//hides button 3 if null, otherwise displays
+  if(questions[id].a[2] == null){
+    displayButton3.classList.add('hide');
+  }else{
+    displayButton3.innerHTML = questions[id].a[2];
+  };
 
   displayButton1.addEventListener("click", () => {
-  displayButton1.style.backgroundColor = "green";
-  displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
-  selected = displayButton1.innerText;
+    displayButton1.style.backgroundColor = "green";
+    displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+    displayButton3.style.backgroundColor = "hsl(27, 88%, 66%)";
+    selected = displayButton1.innerText;
   });
 
   displayButton2.addEventListener("click", () => {
-  displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
-  displayButton2.style.backgroundColor = "green";
-  selected = displayButton2.innerText;
+    displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
+    displayButton2.style.backgroundColor = "green";
+    displayButton3.style.backgroundColor = "hsl(27, 88%, 66%)";
+    selected = displayButton2.innerText;
   });
+
+  displayButton3.addEventListener("click", () => {
+    displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
+    displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+    displayButton3.style.backgroundColor = "green";
+    selected = displayButton3.innerText;
+  });  
+  
 }
 
 // loop for questions and takes user selection to create new object 
@@ -86,8 +108,11 @@ nextButton.addEventListener("click", () => {
   if (id <= questions.length -1) {
     console.log(id, selected);
     iterateQuestions(id);
+
+//returns background colour to orange    
     displayButton1.style.backgroundColor = "hsl(27, 88%, 66%)";
     displayButton2.style.backgroundColor = "hsl(27, 88%, 66%)";
+    displayButton3.style.backgroundColor = "hsl(27, 88%, 66%)";
   }else{
     finalDestination();
 }});
@@ -116,10 +141,8 @@ function finalDestination() {
   console.log(finalUserDestination)
 }
 
-
-  document.getElementById('result').innerHTML += finalUserDestination;
+  document.getElementById('result').innerHTML += finalUserDestination.join('<br/>');
   }
-
 
 
 // creates a new object from users selections
@@ -157,22 +180,6 @@ for (let i = 0; i < locationArray.length; i++) {
 return matchedIndices;
 }
 
-
-/*getMatchedNames(locationArray, compareLocation);
-console.log(matchedName)
-
-function getMatchedNames(object1,array1) {
-	let output=[];
-  
-	array1.forEach(myFunction);
-  function myFunction(item){
-    output.push(object1[array1]['name'])
-  }
-
-	console.log(output) 
-return output;
-}
-*/
 
 
 // Map code
