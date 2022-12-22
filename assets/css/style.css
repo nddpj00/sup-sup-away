@@ -1,6 +1,6 @@
 
-section {
-    background-color: #f3f0ef;
+html {
+        background-color: #f3f0ef;
 } 
 
 .topnav {
@@ -26,6 +26,7 @@ section {
     margin: 20px;
     width: auto;
 }
+
 
 #hero-image {
 
@@ -60,6 +61,7 @@ section {
 
 .hero-text h2 {
     font-family: 'Ranchers', cursive;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: 2px;
     color: #f3f0ef;
@@ -72,7 +74,7 @@ section {
 
 .info1 {
     width: 100%;
-    height: 1500px;
+    height: 1650px;
     background-color: #f3f0ef;
 }
 
@@ -227,17 +229,24 @@ section {
     font-family: 'Ranchers', cursive;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
-    height :400px;
+    height: 443px;
     margin: auto;
-    letter-spacing: 0.05em;
     border-radius: 25px;
+    margin-top: -47px;
+}
+
+#result p{
+    font-family: 'Ranchers', cursive;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    background-color: hsl(27, 88%, 66%);
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #result-text {
     color: #f3f0ef;
-    letter-spacing: 0.1em;
-    padding-top: 20px;
-    padding-bottom: 100px;
 }
 
 
@@ -322,4 +331,65 @@ section {
 .footer-contact address{
     margin-bottom: 0;
     font-family: 'Ranchers', cursive;
+}
+
+/*////////////Media Queries //////////////////////////*/
+
+@media only screen and (max-width: 920px){
+    .hero-text h1{
+        font-size: 60px;
+        margin-left: 180px;
+    }
+    
+    .hero-text h2{
+        font-size: 30px;
+        margin-left: 180px;
+    }
+
+    .info1 h2{
+        font-size: 25px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    #quiz{
+        width: auto;
+    }
+    #map{
+        width: auto;
+    }
+    #questionnaire{
+        height: 1038px;
+    }
+
+    #question {
+        font-size: 30px;
+    }
+    #opt1{
+        font-size: 15px;
+    }
+    #opt2{
+        font-size: 15px;
+    }
+    #opt3{
+        font-size: 15px;
+    }
+    #restart-btn{
+        font-size: 15px;
+    }
+    #next-btn{
+        font-size: 15px;
+    }
+    #result p{
+        font-size: 18px;
+        margin-bottom: 30px;
+        
+    }
+    #result-text{
+        margin-bottom: -10px;
+    }
+    .controls{
+        margin-bottom: 20px;
+    }
 }
