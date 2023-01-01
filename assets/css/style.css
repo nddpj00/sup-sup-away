@@ -30,7 +30,7 @@ html {
 
 #hero-image {
 
-    background-image: url('/assets/images/supsup-heroimage.jpg');
+    background-image: url('./images/supsup-heroimage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@ html {
     border-radius:25px;
     box-shadow: 0 0 10px 2px;
     padding-top: 20px;
-    background-image: url('/assets/images/questionnaire-background.jpg');
+    background-image: url('./images/questionnaire-background.jpg');
     background-size: cover;
     
 }
