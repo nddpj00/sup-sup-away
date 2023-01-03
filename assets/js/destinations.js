@@ -39,7 +39,8 @@ let locationArray = [
       hire: 'No',
       lessons :'No',
       expertise : 'Expert',
-      website : 'https://www.visitcumbria.com/amb/coniston/.com'},
+      website : 'https://www.visitcumbria.com/amb/coniston/.com',
+      marker : {lat: 54.348359608552784, lng: -3.070523343748786}},
 
       {name :'River Cam - Cambridge',
       destination :'River',
@@ -102,7 +103,8 @@ let locationArray = [
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
-      website : 'https://www.paddlerichmond.co.uk/'},
+      website : 'https://www.paddlerichmond.co.uk/',
+      marker : {lat: 51.45803466495877, lng: -0.3061995561725605}},
 
       {name :'West Cliff Beach - Whitby',
       destination :'Sea',
@@ -116,7 +118,8 @@ let locationArray = [
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
-      website : 'https://www.norfolkoutdooradventures.co.uk/'},
+      website : 'https://www.norfolkoutdooradventures.co.uk/',
+      marker : {lat: 52.73868284375335, lng: 1.5792854682748}},
 
       {name :'The River Tay - Perthshire, Scotland',
       destination :'River',

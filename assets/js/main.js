@@ -9,7 +9,8 @@ const displayButton3 = document.getElementById('opt3');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const resultText = document.getElementById('result');
-
+let finalUserDestination = [];
+let finalUserMarkers =[];
 
 // Questions to be asked
 const questions = [{
@@ -130,21 +131,21 @@ function finalDestination() {
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
   
-  //create empty array ready for names that match user criteria
-  let finalUserDestination = [];
-  
   //contains the indexs of the locations that match the users criteria
   let matchedIndicesArray = compareLocation();
   console.log(matchedIndicesArray)
 
   // creates an array of the location array name values
   let destNames = locationArray.map(object => object.name);
-  console.log(destNames)
-
+  console.log(destNames);
+  let destMarkers = locationArray.map(object1 => object1.marker)
+  console.log(destMarkers)
   //loops the machedIndicesArray pushing each selection to new array 'finalUserDestination'
   for(i=0; i < matchedIndicesArray.length ; i++){
-    finalUserDestination.push(destNames[matchedIndicesArray[i]])
+    finalUserDestination.push(destNames[matchedIndicesArray[i]]);
+    finalUserMarkers.push(destMarkers[matchedIndicesArray[i]]);
   console.log(finalUserDestination)
+  console.log(finalUserMarkers)
 }
 
   document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
@@ -177,6 +178,7 @@ for (let i = 0; i < locationArray.length; i++) {
   let duplicateObject = { ...locationArray[i]};
   delete duplicateObject.name;
   delete duplicateObject.website;
+  delete duplicateObject.marker;
 
     // convert and compare
   if (userDataString === JSON.stringify(duplicateObject)) {
@@ -186,28 +188,36 @@ for (let i = 0; i < locationArray.length; i++) {
 return matchedIndices;
 }
 
-console.log(locationArray.length)
 
 // Map code
-
+let map;
 // Initialize and add the map
 function initMap() {
   // The locations
- 
+
   // The map
-  const map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
-      center: { lat: 54.5187636, lng: -4.488381 },
+      center: { lat: 54.888305, lng: -3.308703 },
     });
   // The markers
- 
- 
 
+    let  infowindow = new google.maps.InfoWindow;
+    i = 0;
+    for ( i < finalUserMarkers.length; i++;) {
+      marker = new google.maps.Marker({
+      position: finalUserMarkers[i],
+      map: map,
+  });
+  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    return function() {
+        infowindow.setContent(finalUserMarkers[i]);
+        infowindow.open(map, marker);
+    }
+})(marker, i));
 
-  const locationMarker = new google.maps.Marker({
-    position: locationArray[i].marker,
-    map: map,
-  })};
+     }}
 
 
 window.initMap = initMap;
+
