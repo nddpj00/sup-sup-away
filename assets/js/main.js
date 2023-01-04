@@ -137,15 +137,26 @@ function finalDestination() {
 
   // creates an array of the location array name values
   let destNames = locationArray.map(object => object.name);
-  console.log(destNames);
+  
   let destMarkers = locationArray.map(object1 => object1.marker)
-  console.log(destMarkers)
+  
   //loops the machedIndicesArray pushing each selection to new arrays 'finalUserDestination' and 'finalUserMarkers'
   for(i=0; i < matchedIndicesArray.length ; i++){
     finalUserDestination.push(destNames[matchedIndicesArray[i]]);
     finalUserMarkers.push(destMarkers[matchedIndicesArray[i]]);
   console.log(finalUserDestination)
- 
+  
+  // adds markers on map for each location
+  const marker = new google.maps.Marker({
+    position: finalUserMarkers[i],
+    map,
+    title : finalUserDestination[i],
+  }); 
+  // zooms in on location when clicked
+ marker.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(marker.getPosition());
+  });
 }
 
   document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
@@ -190,34 +201,19 @@ return matchedIndices;
 }
 
 const finalUserMarkers =[];
-
+console.log(finalUserMarkers)
 
 // Map code
 let map;
 
 // Initialize and add the map
 function initMap() {
-  // The locations
-  const mapOptions = {
-    zoom: 5,
-      center: { lat: 54.888305, lng: -3.308703 },
-    };
-  // The map
-
-  map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-    console.log(finalUserMarkers)
-  // The markers
-  for (let i = 0; i < finalUserMarkers.length; i++) {
+map = new google.maps.Map(document.getElementById("map"),{
+  center: { lat: 54.888305, lng: -3.308703 },
+  zoom: 5,
+  mapTypeControl: false,
+  streetViewControl: false,
+ });
+}
   
-    const marker = new google.maps.Marker({
-      // The below line is equivalent to writing:
-      // position: new google.maps.LatLng(-34.397, 150.644)
-      position: finalUserMarkers[i],
-      map: map,
-    });
-  }
-   
-  }
-  
-  window.initMap = initMap;
+window.initMap = initMap;
