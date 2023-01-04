@@ -9,8 +9,8 @@ const displayButton3 = document.getElementById('opt3');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const resultText = document.getElementById('result');
-let finalUserDestination = [];
-let finalUserMarkers =[];
+const finalUserDestination = [];
+
 
 // Questions to be asked
 const questions = [{
@@ -104,7 +104,7 @@ function iterateQuestions(id){
 let id = 0;
 nextButton.addEventListener("click", () => {
 id++;  
- createUserDestObj(selected,id);  
+createUserDestObj(selected,id);  
 
  //checks for selection and if none made alert triggered
 if(displayButton1.style.backgroundColor !== 'green' &&
@@ -140,15 +140,16 @@ function finalDestination() {
   console.log(destNames);
   let destMarkers = locationArray.map(object1 => object1.marker)
   console.log(destMarkers)
-  //loops the machedIndicesArray pushing each selection to new array 'finalUserDestination'
+  //loops the machedIndicesArray pushing each selection to new arrays 'finalUserDestination' and 'finalUserMarkers'
   for(i=0; i < matchedIndicesArray.length ; i++){
     finalUserDestination.push(destNames[matchedIndicesArray[i]]);
     finalUserMarkers.push(destMarkers[matchedIndicesArray[i]]);
   console.log(finalUserDestination)
-  console.log(finalUserMarkers)
+ 
 }
 
   document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
+  
   }
 
 
@@ -188,35 +189,41 @@ for (let i = 0; i < locationArray.length; i++) {
 return matchedIndices;
 }
 
+const finalUserMarkers =[];
+console.log(finalUserMarkers)
 
-// Map code
-let map;
-// Initialize and add the map
-function initMap() {
-  // The locations
-
-  // The map
-  map = new google.maps.Map(document.getElementById("map"), {
+function initMap() { 
+  const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
       center: { lat: 54.888305, lng: -3.308703 },
     });
-  // The markers
-
-    let  infowindow = new google.maps.InfoWindow;
-    i = 0;
-    for ( i < finalUserMarkers.length; i++;) {
-      marker = new google.maps.Marker({
-      position: finalUserMarkers[i],
-      map: map,
+  const infoWindow = new google.maps.InfoWindow({
+    content: "",
+    disableAutoPan: true,
   });
-  google.maps.event.addListener(marker, 'click', (function(marker, i) {
-    return function() {
-        infowindow.setContent(finalUserMarkers[i]);
-        infowindow.open(map, marker);
-    }
-})(marker, i));
+  // Create an array of alphabetical characters used to label the markers.
+  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  // Add some markers to the map.
+  const markers = finalUserMarkers.map((position, i) => {
+    const label = labels[i % labels.length];
+    const marker = new google.maps.Marker({
+      position,
+      label,
+      
+    });
 
-     }}
+    // markers can only be keyboard focusable when they have click listeners
+    // open info window when marker is clicked
+    marker.addListener("click", () => {
+      infoWindow.setContent(label);
+      infoWindow.open(map, marker);
+    });
+    return marker;
+  });
+
+  // Add a marker clusterer to manage the markers.
+  //new MarkerClusterer({ markers, map });
+}
 
 
 window.initMap = initMap;
