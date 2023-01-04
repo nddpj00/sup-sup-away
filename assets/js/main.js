@@ -190,41 +190,34 @@ return matchedIndices;
 }
 
 const finalUserMarkers =[];
-console.log(finalUserMarkers)
 
-function initMap() { 
-  const map = new google.maps.Map(document.getElementById("map"), {
+
+// Map code
+let map;
+
+// Initialize and add the map
+function initMap() {
+  // The locations
+  const mapOptions = {
     zoom: 5,
       center: { lat: 54.888305, lng: -3.308703 },
-    });
-  const infoWindow = new google.maps.InfoWindow({
-    content: "",
-    disableAutoPan: true,
-  });
-  // Create an array of alphabetical characters used to label the markers.
-  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  // Add some markers to the map.
-  const markers = finalUserMarkers.map((position, i) => {
-    const label = labels[i % labels.length];
+    };
+  // The map
+
+  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    console.log(finalUserMarkers)
+  // The markers
+  for (let i = 0; i < finalUserMarkers.length; i++) {
+  
     const marker = new google.maps.Marker({
-      position,
-      label,
-      
+      // The below line is equivalent to writing:
+      // position: new google.maps.LatLng(-34.397, 150.644)
+      position: finalUserMarkers[i],
+      map: map,
     });
-
-    // markers can only be keyboard focusable when they have click listeners
-    // open info window when marker is clicked
-    marker.addListener("click", () => {
-      infoWindow.setContent(label);
-      infoWindow.open(map, marker);
-    });
-    return marker;
-  });
-
-  // Add a marker clusterer to manage the markers.
-  //new MarkerClusterer({ markers, map });
-}
-
-
-window.initMap = initMap;
-
+  }
+   
+  }
+  
+  window.initMap = initMap;

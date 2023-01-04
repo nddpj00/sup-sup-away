@@ -32,7 +32,7 @@ let locationArray = [
       lessons :'Yes',
       expertise : 'Beginner',
       website : 'https://www.ullswaterpaddleboarding.co.uk/',
-      marker : { lat:54.602528434586624, lng : -2.852419437363534 }},
+      marker :   {lat:54.602528434586624, lng: -2.852419437363534 }},
 
       {name :'Coniston Water',
       destination :'Lake',
