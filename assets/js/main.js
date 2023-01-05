@@ -12,6 +12,7 @@ const resultText = document.getElementById('result');
 const finalUserDestination = [];
 
 
+
 // Questions to be asked
 const questions = [{
   id:1,
@@ -130,36 +131,47 @@ function finalDestination() {
   nextButton.classList.add('hide');
   restartButton.classList.add('hide');
   resultText.classList.remove('hide');
-  
+  const finalUserWebsite = [];
   //contains the indexs of the locations that match the users criteria
   let matchedIndicesArray = compareLocation();
   console.log(matchedIndicesArray)
 
   // creates an array of the location array name values
   let destNames = locationArray.map(object => object.name);
-  
-  let destMarkers = locationArray.map(object1 => object1.marker)
-  
+  let destMarkers = locationArray.map(object1 => object1.marker);
+  let destWeb = locationArray.map(object2 => object2.website);
   //loops the machedIndicesArray pushing each selection to new arrays 'finalUserDestination' and 'finalUserMarkers'
   for(i=0; i < matchedIndicesArray.length ; i++){
     finalUserDestination.push(destNames[matchedIndicesArray[i]]);
     finalUserMarkers.push(destMarkers[matchedIndicesArray[i]]);
-  console.log(finalUserDestination)
+    finalUserWebsite.push(destWeb[matchedIndicesArray[i]]);
+  console.log(finalUserDestination);
+  console.log(finalUserWebsite[i]);
   
+   
   // adds markers on map for each location
   const marker = new google.maps.Marker({
     position: finalUserMarkers[i],
     map,
     title : finalUserDestination[i],
   }); 
-  // zooms in on location when clicked
+
+ const infowindow = new google.maps.InfoWindow({
+  content:`<a href= '${finalUserWebsite[i]}' target ='_blank'}> ${finalUserDestination[i]}</a>`,
+  ariaLabel: `${finalUserDestination}`,
+});
+ // zooms in on location when clicked
  marker.addListener("click", () => {
     map.setZoom(8);
     map.setCenter(marker.getPosition());
-  });
+  
+  infowindow.open({
+    anchor: marker,
+    map,
+  });});
 }
 
-  document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
+ document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
   
   }
 
@@ -209,11 +221,13 @@ let map;
 // Initialize and add the map
 function initMap() {
 map = new google.maps.Map(document.getElementById("map"),{
-  center: { lat: 54.888305, lng: -3.308703 },
+  center: { lat: 53.69631, lng: -3.62492 },
   zoom: 5,
   mapTypeControl: false,
   streetViewControl: false,
- });
+});
+
+
 }
   
 window.initMap = initMap;

@@ -124,7 +124,7 @@ let locationArray = [
       marker : { lat: 54.49211119569256, lng: -0.6223178449836911}},
 
       {name :'Hickling Broad - Norfolk',
-      destination :'River',
+      destination :'Lake',
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
@@ -140,7 +140,7 @@ let locationArray = [
       marker : { lat: 56.50902230486181, lng: -3.414042607272759}},
 
       {name :'Loch Tay - Perthshire, Scotland',
-      destination :'River',
+      destination :'Lake',
       hire: 'Yes',
       lessons :'No',
       expertise : 'Beginner',
@@ -148,7 +148,7 @@ let locationArray = [
       marker : { lat: 56.487189446558105, lng: -4.241308987402993 }},
 
       {name :'Loch Ness - Scottish Highlands',
-      destination :'River',
+      destination :'Lake',
       hire: 'Yes',
       lessons :'No',
       expertise : 'Expert',
@@ -232,6 +232,14 @@ let locationArray = [
       hire: 'Yes',
       lessons :'Yes',
       expertise : 'Beginner',
-      website : 'https://longlinesurfschool.co.uk/#tab-id-5',
+      website : 'https://longlinesurfschool.co.uk/portfolio_entries/stand-up-paddleboard/',
       marker : { lat: 55.14356977254304, lng: -6.933098422303137}},
+
+      {name :'Derwentwater - Keswick, Cumbria',
+      destination :'Lake',
+      hire: 'No',
+      lessons :'No',
+      expertise : 'Beginner',
+      website : 'https://www.visitcumbria.com/kes/derwentwater/',
+      marker : { lat: 54.57956184039879, lng: -3.147665926169121}},
     ];
