@@ -26,7 +26,7 @@ const questions = [{
   },
 
   {id:3,
-  q: "Are you wanting to take some lessons?",
+  q: "Are you wanting to take lessons?",
   a: ["Yes", "No"]
   },
 

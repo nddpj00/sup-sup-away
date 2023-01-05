@@ -89,6 +89,7 @@ html {
     margin-left: 20%;
     margin-right: 20%;
     padding-top: 40px;
+    padding-bottom: 26px;
     letter-spacing: 2px;
     
 }
@@ -106,7 +107,7 @@ html {
 }
 
 
-#imageboy img {
+#imageboy img{
     width: 50%;
     height: 375px;
     object-fit: cover;
@@ -226,18 +227,19 @@ html {
 
 
 #result{
+    position: relative;
     font-family: 'Ranchers', cursive;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
-    height: 443px;
+    min-height: 443px;
     margin: auto;
     border-radius: 25px;
-    margin-top: -47px;
+    margin-top: -50px;
 }
 
-#result p{
+#result-top{
     font-family: 'Ranchers', cursive;
-    font-size: 25px;
+    font-size: 23px;
     letter-spacing: 0.05em;
     background-color: hsl(27, 88%, 66%);
     text-align: center;
@@ -247,9 +249,26 @@ html {
 
 #result-text {
     color: #f3f0ef;
+    font-family: 'Ranchers', cursive;
+    font-size: 23px;
+    letter-spacing: 0.05em;
+    background-color: hsl(27, 88%, 66%);
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-
+#result-bottom {
+    font-size: 19px;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 0.05em;
+    background-color: hsl(27, 88%, 66%);
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+  }
 
 /*-------------------------------------------------------map*/
 
@@ -345,7 +364,15 @@ html {
         font-size: 30px;
         margin-left: 180px;
     }
+    #imageboy img {
+        width: 90%;
+        height: 232px;
+    }
 
+    #harbourimg img {
+        width: 90%;
+        height: 232px;
+    }
     .info1 h2{
         font-size: 25px;
     }
@@ -381,15 +408,18 @@ html {
     #next-btn{
         font-size: 15px;
     }
-    #result p{
-        font-size: 18px;
-        margin-bottom: 30px;
-        
+    
+    #result{
+        min-height: 480px;
     }
     #result-text{
         margin-bottom: -10px;
+        font-size: 18px;
     }
     .controls{
         margin-bottom: 20px;
+    }
+    #result-bottom{
+        font-size: 18px ;
     }
 }
