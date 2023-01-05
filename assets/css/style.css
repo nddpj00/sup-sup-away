@@ -3,27 +3,61 @@ html {
         background-color: #f3f0ef;
 } 
 
-.topnav {
-    overflow: hidden;
-}
-
-.topnav a {
-    
-    color: #f3f0ef;
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  nav ul {
+    list-style: none;
     text-align: center;
-    padding: 14px 16px;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
     text-decoration: none;
-    font-size: 25px;
+    color: #f3f0ef;
+    font-weight: 800;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #f3f0ef;
+  }
+  
+nav.topnav ul li a {
+  position: relative;
 }
 
-.topnav a:hover {
-    background-color: #f3f0ef;
-    color: black;
+nav.topnav ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
 }
+
+nav.topnav ul li a:hover:after {
+  width: 100%;
+}
+
 
 .navcontainer {
     position: absolute;
-    margin: 20px;
     width: auto;
 }
 
@@ -268,6 +302,8 @@ html {
     padding-bottom: 0px;
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
   }
 
 /*-------------------------------------------------------map*/
@@ -301,8 +337,8 @@ html {
 .social-networks {
     text-align: center;
     margin-right: 32px;
-    margin-top: -55px;
-    height: 117px;
+    margin-top: 0px;
+    height: 85px;
 }
 
 .social-networks li {
@@ -310,7 +346,7 @@ html {
 }
 
 .social-networks i {
-    font-size: 200%;
+    font-size: 340%;
     margin: 1%;
     padding: 5%;
     color: rgb(49, 49, 49);
@@ -334,13 +370,15 @@ html {
 .footer-contact{
     text-align: center;
     color: rgb(49, 49, 49);
+    height: 110px;
+    margin-top: 85px;
 }
 
 .footer-contact a{
     color: rgb(49, 49, 49);
     text-decoration:none;
     font-family: 'Ranchers', cursive;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .footer-contact a:hover{
@@ -358,6 +396,10 @@ html {
     .hero-text h1{
         font-size: 60px;
         margin-left: 180px;
+    }
+    
+    #hero-image{
+        height: 480px;
     }
     
     .hero-text h2{
@@ -387,7 +429,12 @@ html {
         width: auto;
     }
     #questionnaire{
-        height: 1038px;
+        height: 980px;
+        max-width: 90%;
+    }
+
+    #start-btn{
+        margin-top: 0px;
     }
 
     #question {
