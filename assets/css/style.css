@@ -1,11 +1,10 @@
 html {
-        background-color: #f3f0ef;
-        height: 100%;
+    height: 100%;
 }
 
 body {
     height: 100%;
-    background-color: #f3f0ef;
+    background-color: #f3f0ef!important
 }
 
 nav {
@@ -76,7 +75,7 @@ nav.topnav ul li a:hover:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 865px;
     width: 100%;
     position: relative;
     justify-content: center;
@@ -100,12 +99,13 @@ nav.topnav ul li a:hover:after {
 }
 
 .hero-text h2 {
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 23px;
     font-weight: 800;
     color: #f3f0ef;
     padding-top: 12px;
-    margin-top: 77px;
+    margin-top: 39px;
+    margin-bottom: 116px;
     text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@ nav.topnav ul li a:hover:after {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 20px;
     font-weight: 800;
     margin: 4px 2px;
@@ -132,56 +132,32 @@ nav.topnav ul li a:hover:after {
 }
 
 /*-------------------------------------------------Inner*/
-
-.info1 {
-    width: 100%;
-    height: 400px;
-    background-color: #f3f0ef;
-    text-align: center;
-}
-
-.info1 h2 {
+.info-header {
     font-family: 'Ranchers', cursive;
     font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
-    position: relative;
     color: rgb(49, 49, 49);
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
     padding-top: 40px;
-    padding-bottom: 26px;
-    letter-spacing: 2px;
-    
+    padding-bottom: 25px;
+    letter-spacing: 1.5px;
 }
 
-.info1 p {
+.info1 {
     font-family: dinnextltpro;
     font-size: 20px;
     line-height: 32px;
     font-weight: 300;
-    margin-top: 50px;
     color: rgb(49, 49, 49);
     text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-bottom: 25px;
 }
 
-
-.water-bg {
-    background-image: url('../images/questionnaire-background.jpg');
-    background-size: cover;
+.image-item img{
+    width:600px ;
+    height:420px;
+    object-fit: cover;
 }
 
-.container{
-    width: 100%;
-    background-color: #f3f0ef;
-}
-.row {
-    width: 100%;
-    overflow: hidden;
-}
 
 
 /*-------------------------------------------------quiz and map*/
@@ -189,19 +165,22 @@ nav.topnav ul li a:hover:after {
 
 #questionnaire {
     height: 500px;
-    width: 1100px;
-    max-width: 80%;
+    max-width: 90%;
     border: 2px solid;
     border-radius:25px;
     box-shadow: 0 0 10px 2px;
     padding-top: 20px;
-    background-image: url('../images/questionnaire-background.jpg');
+    background-image: url('../images/finder-tool-backdrop.jpg');
+    background-position: bottom;
     background-size: cover;
     
 }
 
 /*-------------------------------------------------quiz*/
+#quiz{
+    height: 440px;
 
+}
 
 
 #question {
@@ -216,10 +195,10 @@ nav.topnav ul li a:hover:after {
     margin-top: 50px;
 }
 
+
 .start-btn{
     padding-top:50px;
 }
-
 #start-btn{
     height: 70px;
     width: 200px;
@@ -282,53 +261,40 @@ nav.topnav ul li a:hover:after {
 #result{
     position: relative;
     font-family: 'Ranchers', cursive;
-    font-size: 25px;
-    background-color: hsl(27, 88%, 66%);
-    min-height: 443px;
-    margin: auto;
+    min-height: 455px;
     border-radius: 25px;
-    margin-top: -50px;
 }
 
 #result-top{
     font-family: 'Ranchers', cursive;
     font-size: 23px;
     letter-spacing: 0.05em;
-    background-color: hsl(27, 88%, 66%);
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 #result-text {
-    color: #f3f0ef;
+    color: black;
     font-family: 'Ranchers', cursive;
     font-size: 23px;
     letter-spacing: 0.05em;
-    background-color: hsl(27, 88%, 66%);
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
 
 #result-bottom {
     font-size: 19px;
     font-family: 'Ranchers', cursive;
     letter-spacing: 0.05em;
-    background-color: hsl(27, 88%, 66%);
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-  }
+}
 
 /*-------------------------------------------------------map*/
 
 #map {
-    height :440px;
+    height :457px;
+    width: 33%;
 }
 
 
@@ -336,7 +302,6 @@ nav.topnav ul li a:hover:after {
 .footer-bottom {
     margin: auto;
     width: 100%;
-    background-color:#f3f0ef;
     bottom: 0;
     left: 0;
     position: relative;
@@ -411,46 +376,47 @@ nav.topnav ul li a:hover:after {
 
 /*////////////Media Queries //////////////////////////*/
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 768px){
 
 nav ul li a {
     font-weight: 600;
     font-size: 17px;
-      }
+}
 
 
-    .hero-text h1{
-        font-size: 60px;
-    }
+.hero-text h1{
+    font-size: 50px;
+}
     
-    #hero-image{
-        height: 480px;
-    }
+#hero-image{
+    height: 565px;
+}
     
     .hero-text h2{
         font-size: 14px;
+        margin-bottom: 20px;
     }
-    #imageboy img {
-        width: 90%;
-        height: 232px;
+    
+    .finder-btn{
+        font-size: 13px;
     }
 
-    #harbourimg img {
-        width: 90%;
-        height: 232px;
+    .image-item img{
+        padding-bottom: 10px;
+        height: 260px;
     }
-    .info1 h2{
+
+    .info1{
         font-size: 17px;
+        text-align: center;
     }
-    .flex-container {
-        flex-direction: column;
-    }
+
 
     #quiz{
         width: auto;
     }
     #map{
-        width: auto;
+        width: 90%;
     }
     #questionnaire{
         height: 980px;
@@ -492,5 +458,12 @@ nav ul li a {
     }
     #result-bottom{
         font-size: 18px ;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+        
+    .hero-text h2{
+  margin-bottom: 39px;
     }
 }
