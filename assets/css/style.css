@@ -5,6 +5,7 @@ html {
 
 body {
     height: 100%;
+    background-color: #f3f0ef;
 }
 
 nav {
@@ -168,40 +169,20 @@ nav.topnav ul li a:hover:after {
 }
 
 
-#imageboy img{
-    width: 50%;
-    height: 375px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#harbourimg img {
-    width: 50%;
-    height: 375px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .water-bg {
     background-image: url('../images/questionnaire-background.jpg');
     background-size: cover;
 }
 
-.image-column {
-    float: left;
-    width: 50%;
-    padding: 5px;
+.container{
+    width: 100%;
+    background-color: #f3f0ef;
+}
+.row {
+    width: 100%;
+    overflow: hidden;
 }
 
-.image-row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /*-------------------------------------------------quiz and map*/
 
@@ -461,10 +442,10 @@ nav ul li a {
     .info1 h2{
         font-size: 17px;
     }
-    .row{
-        display: flex;
+    .flex-container {
         flex-direction: column;
     }
+
     #quiz{
         width: auto;
     }
