@@ -1,6 +1,6 @@
 <h1 align = "center">Sup Sup & Away!<h/1>
 
-<h2 align = "center"><img src="assets/images/supsup-responsive-display.jpg"></h2>
+<h2 align = "center"><img src="assets/images/images-readme/supsup-responsive-display.jpg"></h2>
 
 [View the live project here.](https://nddpj00.github.io/sup-sup-away/)
 ## User Experience (UX)
@@ -13,7 +13,7 @@
         2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content; including links to social media.
         3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.
 
-     -   #### Returning Visitor Goals
+     -  #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to find information about paddleboarding in the UK.
         2. As a Returning Visitor, I want to find information about where in the UK are good locations to paddleboard.
