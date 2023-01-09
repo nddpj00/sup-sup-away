@@ -1,7 +1,3 @@
-html {
-    height: 100%;
-}
-
 body {
     height: 100%;
     background-color: #f3f0ef!important
@@ -71,7 +67,7 @@ nav.topnav ul li a:hover:after {
 }
 
 #hero-image {
-    background-image: url('../images/supsup-heroimage.jpg');
+    background-image: url('../images/supsup-hero-largejpg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,12 +80,10 @@ nav.topnav ul li a:hover:after {
     overflow: hidden;
 }
 
-
 .hero-text {
     max-width: 75%;
     margin-bottom: 452px;
     margin-top: 190px;
-    
 }
 
 .hero-text h1 {
@@ -109,26 +103,21 @@ nav.topnav ul li a:hover:after {
     text-transform: uppercase;
 }
 
-
-.finder-btn {
+#finder-btn {
     background-color: black;
     color: white;
     padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
     font-weight: 800;
     margin: 4px 2px;
-    cursor: pointer;
     border-style: solid;
+    border: #f3f0ef;
     text-transform: uppercase;
 }
 
-.finder-btn a:hover{
-    color: black;
-    background-color: #f3f0ef;
+#finder-btn a:hover{
+    background-color: white;
+    color: #0a0a0a;
 }
 
 /*-------------------------------------------------Inner*/
@@ -148,7 +137,6 @@ nav.topnav ul li a:hover:after {
     line-height: 32px;
     font-weight: 300;
     color: rgb(49, 49, 49);
-    text-align: justify;
     padding-bottom: 25px;
 }
 
@@ -158,11 +146,7 @@ nav.topnav ul li a:hover:after {
     object-fit: cover;
 }
 
-
-
 /*-------------------------------------------------quiz and map*/
-
-
 #questionnaire {
     height: 500px;
     max-width: 90%;
@@ -173,15 +157,12 @@ nav.topnav ul li a:hover:after {
     background-image: url('../images/finder-tool-backdrop.jpg');
     background-position: bottom;
     background-size: cover;
-    
 }
 
 /*-------------------------------------------------quiz*/
 #quiz{
     height: 440px;
-
 }
-
 
 #question {
     height: 100px;
@@ -189,25 +170,19 @@ nav.topnav ul li a:hover:after {
     font-size: 40px;
 }
 
-
 #question-container{
     height: 231px;
     margin-top: 50px;
 }
 
-
-.start-btn{
-    padding-top:50px;
-}
 #start-btn{
-    height: 70px;
     width: 200px;
-    border-radius: 25px;
     font-family: 'Ranchers', cursive;
     font-size: 40px;
-    border-color: #0a0a0a;
     margin-top: 180px;
     background-color: hsl(27, 88%, 66%);
+    color: #0a0a0a;
+    letter-spacing: 1px;
 }
 
 #restart-btn{
@@ -273,7 +248,7 @@ nav.topnav ul li a:hover:after {
 }
 
 #result-text {
-    color: black;
+    color: #b41412;;
     font-family: 'Ranchers', cursive;
     font-size: 23px;
     letter-spacing: 0.05em;
@@ -294,9 +269,8 @@ nav.topnav ul li a:hover:after {
 
 #map {
     height :457px;
-    width: 33%;
+    width: 31%;
 }
-
 
 /*-------------------------------------------------footer*/
 .footer-bottom {
@@ -336,7 +310,6 @@ nav.topnav ul li a:hover:after {
     color: rgb(49, 49, 49);
 }
 
-
 .social-networks i:hover{
     color: hsl(27, 88%, 66%);
 }
@@ -349,7 +322,6 @@ nav.topnav ul li a:hover:after {
 .social-networks a:hover{
     color: hsl(27, 88%, 66%);
 }
-
 
 .footer-contact{
     text-align: center;
@@ -383,7 +355,6 @@ nav ul li a {
     font-size: 17px;
 }
 
-
 .hero-text h1{
     font-size: 50px;
 }
@@ -391,79 +362,80 @@ nav ul li a {
 #hero-image{
     height: 565px;
 }
-    
-    .hero-text h2{
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    
-    .finder-btn{
-        font-size: 13px;
-    }
 
-    .image-item img{
-        padding-bottom: 10px;
-        height: 260px;
-    }
+.hero-text h2{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
 
-    .info1{
-        font-size: 17px;
-        text-align: center;
-    }
+.finder-btn{
+    font-size: 13px;
+}
 
+.image-item img{
+    padding-bottom: 10px;
+    height: 260px;
+}
 
-    #quiz{
-        width: auto;
-    }
-    #map{
-        width: 90%;
-    }
-    #questionnaire{
-        height: 980px;
-        max-width: 90%;
-    }
+.info1{
+    font-size: 17px;
+    text-align: center;
+}
 
-    #start-btn{
-        margin-top: 0px;
-    }
+#map{
+    width: 100%;
+    padding: 0 5px;
+    border-top-left-radius:0px !important;
+    border-top-right-radius:0px!important;
+    border: none!important;
+}
 
-    #question {
-        font-size: 30px;
-    }
-    #opt1{
-        font-size: 15px;
-    }
-    #opt2{
-        font-size: 15px;
-    }
-    #opt3{
-        font-size: 15px;
-    }
-    #restart-btn{
-        font-size: 15px;
-    }
-    #next-btn{
-        font-size: 15px;
-    }
-    
-    #result{
-        min-height: 480px;
-    }
-    #result-text{
-        margin-bottom: -10px;
-        font-size: 18px;
-    }
-    .controls{
-        margin-bottom: 20px;
-    }
-    #result-bottom{
-        font-size: 18px ;
-    }
+#questionnaire{
+    height: 920px;
+    max-width: 100%;
+}
+
+#quiz{
+    width: 100%;
+}
+
+.option-buttons{
+    font-size: 20px;
+}
+
+#question {
+    font-size: 30px;
+}
+
+#restart-btn{
+    font-size: 15px;
+}
+
+#next-btn{
+    font-size: 15px;
+}
+
+#result{
+    min-height: 480px;
+}
+
+#result-text{
+    margin-bottom: -10px;
+    font-size: 18px;
+}
+
+.controls{
+    margin-bottom: 20px;
+}
+
+#result-bottom{
+    font-size: 18px ;
+}
 }
 
 @media screen and (min-width: 1920px) {
         
-    .hero-text h2{
-  margin-bottom: 39px;
-    }
+.hero-text h2{
+    margin-bottom: 39px;
+}
 }
