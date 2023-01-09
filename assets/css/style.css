@@ -87,7 +87,7 @@ nav.topnav ul li a:hover:after {
 }
 
 .hero-text h1 {
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 80px;
     color:#f3f0ef ;
 }
@@ -122,20 +122,21 @@ nav.topnav ul li a:hover:after {
 
 /*-------------------------------------------------Inner*/
 .info-header {
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 40px;
     color: rgb(49, 49, 49);
     text-align: center;
     padding-top: 40px;
     padding-bottom: 25px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .info1 {
-    font-family: dinnextltpro;
+    font-family: Montserrat, sans-serif;
     font-size: 20px;
     line-height: 32px;
-    font-weight: 300;
+    font-weight: 500;
     color: rgb(49, 49, 49);
     padding-bottom: 25px;
 }
@@ -166,7 +167,7 @@ nav.topnav ul li a:hover:after {
 
 #question {
     height: 100px;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 40px;
 }
 
@@ -177,7 +178,7 @@ nav.topnav ul li a:hover:after {
 
 #start-btn{
     width: 200px;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 40px;
     margin-top: 180px;
     background-color: hsl(27, 88%, 66%);
@@ -187,7 +188,7 @@ nav.topnav ul li a:hover:after {
 
 #restart-btn{
     border-color: #0a0a0a;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
     width: 100px;
@@ -195,7 +196,7 @@ nav.topnav ul li a:hover:after {
 
 #next-btn{
     border-color: #0a0a0a;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
     width: 100px;
@@ -204,21 +205,21 @@ nav.topnav ul li a:hover:after {
 
 #opt1{
     border-color: #0a0a0a;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
 }
 
 #opt2{
     border-color: #0a0a0a;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
 }
 
 #opt3{
     border-color: #0a0a0a;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 25px;
     background-color: hsl(27, 88%, 66%);
 }
@@ -235,13 +236,13 @@ nav.topnav ul li a:hover:after {
 
 #result{
     position: relative;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     min-height: 455px;
     border-radius: 25px;
 }
 
 #result-top{
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 23px;
     letter-spacing: 0.05em;
     text-align: center;
@@ -249,14 +250,14 @@ nav.topnav ul li a:hover:after {
 
 #result-text {
     color: #b41412;;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 23px;
     letter-spacing: 0.05em;
 }
 
 #result-bottom {
     font-size: 19px;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     letter-spacing: 0.05em;
     padding-bottom: 50px;
     position: absolute;
@@ -285,7 +286,7 @@ nav.topnav ul li a:hover:after {
 
 .logo-footer-text h2 {
     color: rgb(49, 49, 49);
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 48px;
     font-weight: 400;
     text-align: center;
@@ -334,7 +335,7 @@ nav.topnav ul li a:hover:after {
 .footer-contact a{
     color: rgb(49, 49, 49);
     text-decoration:none;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
     font-size: 35px;
 }
 
@@ -344,7 +345,7 @@ nav.topnav ul li a:hover:after {
 
 .footer-contact address{
     margin-bottom: 0;
-    font-family: 'Ranchers', cursive;
+    font-family: 'Ranchers', sans-serif;
 }
 
 /*////////////Media Queries //////////////////////////*/
