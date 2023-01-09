@@ -1,7 +1,6 @@
 // Array of Objects containing locations
 let locationArray = [
 
-
       {name :'Joss Bay Surf School - Broadstairs',
       destination :'Sea',
       hire: 'Yes',
