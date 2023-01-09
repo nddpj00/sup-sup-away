@@ -110,8 +110,8 @@ nav.topnav ul li a:hover:after {
     font-family: Montserrat, sans-serif;
     font-weight: 800;
     margin: 4px 2px;
-    border-style: solid;
-    border: #f3f0ef;
+    border-style: solid!important;
+    border: #f3f0ef!important;
     text-transform: uppercase;
 }
 
