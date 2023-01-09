@@ -153,13 +153,18 @@ names, co-ordinates and urls respectively*/
 });
 // zooms in on location when clicked
   marker.addListener("click", () => {
+    if(map.getZoom() > 7){
+    map.setCenter( { lat: 53.69631, lng: -3.62492 });
+    map.setZoom(5);
+    infowindow.close();
+    }else{
     map.setZoom(8);
     map.setCenter(marker.getPosition());
   
   infowindow.open({
     anchor: marker,
     map,
-  });});
+  })};});
 };
 
 document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');

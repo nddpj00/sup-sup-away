@@ -263,6 +263,7 @@ nav.topnav ul li a:hover:after {
     bottom: 0;
     right: 0;
     left: 0;
+    text-align: center;
 }
 
 /*-------------------------------------------------------map*/
