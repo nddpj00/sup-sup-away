@@ -40,15 +40,17 @@
 
 ##  Features
 
-    -   Responsive on all device sizes
+-   Responsive on all device sizes
 
-    -   Interactive elements including a tool to assist finding locations
+-   Interactive elements including a tool to assist finding locations
+
+## Technologies Used
 
 ### Languages Used
 
-    -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-    -   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
