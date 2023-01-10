@@ -147,6 +147,10 @@ nav.topnav ul li a:hover:after {
     object-fit: cover;
 }
 
+.info1 p a{
+    color:hsl(27, 88%, 66%)
+}
+
 /*-------------------------------------------------quiz and map*/
 #questionnaire {
     height: 500px;
