@@ -167,6 +167,7 @@ names, co-ordinates and urls respectively*/
 });
 }
 document.getElementById('result-text').innerHTML += finalUserDestination.join('<br/>');
+restartButton.classList.remove('hide');
 }
 
 // creates a new object from users selections
