@@ -34,9 +34,11 @@
 
 *   ### Wireframes
 
-    -   Large Screen Wireframe - [View](assets/images/images-readme/supsup-wireframe.jpg)
+    -   Large Screen Wireframe
+![PC wireframe](assets/images/images-readme/supsup-wireframe.jpg)
 
-    -   Mobile Screen Wireframe - [View](assets/images/images-readme/supsup-Mobile-wireframe.jpg)
+    -   Mobile Screen Wireframe
+![Mobile Wireframe](assets/images/images-readme/supsup-Mobile-wireframe.jpg)
 
 ##  Features
 
@@ -44,28 +46,28 @@
 
 2. Hero image/navigation
    Minimal, simple navigation links, engaging hero text and a stand-out button to take you straight to the main function of the site.
-![main hero image](assets/images/images-readme/supsup-readme-heroimg.jpg)>
+   <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
 
 3. The Finder Tool
    This is the main function of the site.  
    It offers users a tool that takes the responses of a few key questions to work out the best locations for them to paddleboard.
 
-    - Start Button. It initiates on the 'Start' button as directed on the page.
-    <img align = "center" width = "300px" height = 200px src = "assets/images/images-readme/supsup-readme-start-button.jpg">
+   - Start Button. It initiates on the 'Start' button as directed on the page.
+   <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-start-button.jpg">
 
-    - Questions. Runs through 4 questions.
-    <img align = "center" width = "300px" height = 200px src = "assets/images/images-readme/supsup-readme-questions.jpg">
+   - Questions. Runs through 4 questions.
+   <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-questions.jpg">
 
-    - Results. Provides a results page, listing the locations best suited to the user and marking them on the google map.
-    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-results.jpg">
+   - Results. Provides a results page, listing the locations best suited to the user and marking them on the google map.
+   <img align = "center" width ="300px" height = "200px" src = "assets/images/images-readme/supsup-readme-results.jpg">
 
-    - Google Map. The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out.
-    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">
+   - Google Map. The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out.
+   <img align = "center" width ="300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">
 
-    - Alert. If the user trys to click next without selection they will receive an alert.
-    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-alert.jpg">
+   - Alert. If the user trys to click next without selection they will receive an alert.
+   <img align = "center" width ="300px" height = "200px" src = "assets/images/images-readme/supsup-readme-alert.jpg">
 
-    - Restart - At any time the user can choose to restart the questions by selecting 'Restart' button.
+   - Restart - At any time the user can choose to restart the questions by selecting 'Restart' button.
 
 
 ## Technologies Used
@@ -102,10 +104,12 @@
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
 
 
--   W3C Markup Validator complete without errors.<img src= assets/images/images-testing/supsup-html-checker.jpg style= width:200px; height:150px; float:right>
+-   W3C Markup Validator complete without errors.
+   <img align = "center" width ="300px" height = 200px src = "assets/images/images-testing/supsup-html-checker.jpg">
 
     
--   W3C CSS Validator complete without errors. <img src= assets/images/images-testing/supsup-css-validator.jpg style= width:200px; height:150px>
+-   W3C CSS Validator complete without errors.
+   <img align = "center"  style= width:300px; height:200px src= assets/images/images-testing/supsup-css-validator.jpg>  
    
 
 I used JS Hint and JS Lint for validating my Javascript code.  They both produced reports with no errors but some warnings.  The warning included using 'let' and 'const', arrow functions and using single quotations instead of double. I'm happy that none of the warnings will effect the site.  As a precausion I've carried out extensive brower testing to ensure my code will work.
