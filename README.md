@@ -40,15 +40,15 @@
 
 ##  Features
 
--   Responsive on all device sizes
+1. Responsive on all device sizes
 
--   <h3>Hero image/navigation</h3>
-    Minimal, simple navigation links, engaging hero text and a 
-    stand-out button to take you straight to the main function of the site. 
-    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
+2. Hero image/navigation
+   Minimal, simple navigation links, engaging hero text and a stand-out button to take you straight to the main function of the site.
+![main hero image](assets/images/images-readme/supsup-readme-heroimg.jpg)>
 
--    <h3>The Finder Tool</h3>
-    This is the main function of the site.  It offers users a tool that takes the responses of a few key questions to work out the best locations for them to paddleboard.
+3. The Finder Tool
+   This is the main function of the site.  
+   It offers users a tool that takes the responses of a few key questions to work out the best locations for them to paddleboard.
 
     - Start Button. It initiates on the 'Start' button as directed on the page.
     <img align = "center" width = "300px" height = 200px src = "assets/images/images-readme/supsup-readme-start-button.jpg">
