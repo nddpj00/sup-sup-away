@@ -42,23 +42,23 @@
 
 -   Responsive on all device sizes
 
--   <h3>Hero image/navigation</h3>Minimal, simple navigation links, engaging hero text and a stand-out button to take youstraight to the main function of the site. [view](assets/images/images-readme/supsup-readme-heroimg.jpg)
+-   <h3>Hero image/navigation</h3>Minimal, simple navigation links, engaging hero text and a 
+    stand-out button to take youstraight to the main function of the site. [view](assets/images/images-readme/supsup-readme-heroimg.jpg)
 
--    <h3>The Finder Tool</h3>This is the main function of the site.  It offers users a tool    
-that takes the responses of a few key questions to work out the best locations for them to     
-paddleboard. 
+-    <h3>The Finder Tool</h3>This is the main function of the site.  It offers users a    
+    tool that takes the responses of a few key questions to work out the best locations for them to paddleboard. 
 
-It initiates on the 'Start' button as directed on the page [view](assets/images/images-readme/supsup-readme-start-button.jpg)
+    It initiates on the 'Start' button as directed on the page [view](assets/images/images-readme/supsup-readme-start-button.jpg)
 
-Runs through 4 questions [view](assets/images/images-readme/supsup-readme-questions.jpg)
+    Runs through 4 questions [view](assets/images/images-readme/supsup-readme-questions.jpg)
 
-Provides a results page, listing the locations best suited to the user and marking them on the google map. [view](assets/images/images-readme/supsup-readme-results.jpg)
+    Provides a results page, listing the locations best suited to the user and marking them on the google map. [view](assets/images/images-readme/supsup-readme-results.jpg)
 
-The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out. [view](assets/images/images-readme/supsup-readme-results.jpg)
+    The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out. [view](assets/images/images-readme/supsup-readme-mapzoom.jpg)
 
-If the user trys to click next without selection they will receive an alert. [view](assets/images/images-readme/supsup-readme-alert.jpg)
+    If the user trys to click next without selection they will receive an alert. [view](assets/images/images-readme/supsup-readme-alert.jpg)
 
-At any time the user can choose to restart the questions by selecting 'Restart' button.
+    At any time the user can choose to restart the questions by selecting 'Restart' button.
 
 
 ## Technologies Used
@@ -92,10 +92,19 @@ At any time the user can choose to restart the questions by selecting 'Restart' 
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validae the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
+-   W3C Markup Validator complete without errors
+    <img src= assets/images/images-testing/supsup-html-checker.jpg style=width:200px; height=150px>
+
+-   W3C CSS Validator complete without errors
+    <img src= assets/images/images-testing/supsup-css-validator.jpg style=width:200px; height=150px>
+
+I used JS Hint and JS Lint for validating my Javascript code.  They both produced reports with no errors but some warnings.  The warning included using 'let' and 'const', arrow functions and using single quotations instead of double. I'm happy that none of the warnings will effect the site.  As a precausion I've carried out extensive brower testing to ensure my code will work.
+
+### Manual Vs Automated Testing
+
 
 ### Testing User Stories from User Experience (UX) Section
 
