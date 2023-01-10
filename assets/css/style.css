@@ -230,7 +230,6 @@ nav.topnav ul li a:hover:after {
 
 .nav-btn-container{
     margin: 50px 0;
-
 }
 
 .hide{
@@ -440,7 +439,7 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1920px) {
-        
+
 .hero-text h2{
     margin-bottom: 39px;
 }

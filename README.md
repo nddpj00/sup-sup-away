@@ -72,3 +72,14 @@
     - Unsplash provided a free resource for the photos used on the site.
 1.  [Tinypng:](https://tinypng.com/)
     - Tinypng was used to compress the photos to improve site load times.
+
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validae the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor Goals
