@@ -43,7 +43,8 @@
 -   Responsive on all device sizes
 
 -   <h3>Hero image/navigation</h3>Minimal, simple navigation links, engaging hero text and a 
-    stand-out button to take youstraight to the main function of the site. [view](assets/images/images-readme/supsup-readme-heroimg.jpg)
+    stand-out button to take youstraight to the main function of the site. 
+    <img src= assets/images/images-readme/supsup-readme-heroimg.jpg style= width:200px; height=150px; text-align:center>
 
 -    <h3>The Finder Tool</h3>This is the main function of the site.  It offers users a    
     tool that takes the responses of a few key questions to work out the best locations for them to paddleboard. 
@@ -95,11 +96,11 @@
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
 
 
--   W3C Markup Validator complete without errors
-    <img src= assets/images/images-testing/supsup-html-checker.jpg style=width:200px; height=150px>
+-   W3C Markup Validator complete without errors.<img src= assets/images/images-testing/supsup-html-checker.jpg style= width:200px; height:150px; float:right>
 
--   W3C CSS Validator complete without errors
-    <img src= assets/images/images-testing/supsup-css-validator.jpg style=width:200px; height=150px>
+    
+-   W3C CSS Validator complete without errors. <img src= assets/images/images-testing/supsup-css-validator.jpg style= width:200px; height:150px>
+   
 
 I used JS Hint and JS Lint for validating my Javascript code.  They both produced reports with no errors but some warnings.  The warning included using 'let' and 'const', arrow functions and using single quotations instead of double. I'm happy that none of the warnings will effect the site.  As a precausion I've carried out extensive brower testing to ensure my code will work.
 
