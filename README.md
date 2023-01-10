@@ -42,24 +42,30 @@
 
 -   Responsive on all device sizes
 
--   <h3>Hero image/navigation</h3>Minimal, simple navigation links, engaging hero text and a 
-    stand-out button to take youstraight to the main function of the site. 
-    <img src= assets/images/images-readme/supsup-readme-heroimg.jpg style= width:200px; height=150px; text-align:center>
+-   <h3>Hero image/navigation</h3>
+    Minimal, simple navigation links, engaging hero text and a 
+    stand-out button to take you straight to the main function of the site. 
+    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
 
--    <h3>The Finder Tool</h3>This is the main function of the site.  It offers users a    
-    tool that takes the responses of a few key questions to work out the best locations for them to paddleboard. 
+-    <h3>The Finder Tool</h3>
+    This is the main function of the site.  It offers users a tool that takes the responses of a few key questions to work out the best locations for them to paddleboard.
 
-    It initiates on the 'Start' button as directed on the page [view](assets/images/images-readme/supsup-readme-start-button.jpg)
+    - Start Button. It initiates on the 'Start' button as directed on the page.
+    <img align = "center" width = "300px" height = 200px src = "assets/images/images-readme/supsup-readme-start-button.jpg">
 
-    Runs through 4 questions [view](assets/images/images-readme/supsup-readme-questions.jpg)
+    - Questions. Runs through 4 questions.
+    <img align = "center" width = "300px" height = 200px src = "assets/images/images-readme/supsup-readme-questions.jpg">
 
-    Provides a results page, listing the locations best suited to the user and marking them on the google map. [view](assets/images/images-readme/supsup-readme-results.jpg)
+    - Results. Provides a results page, listing the locations best suited to the user and marking them on the google map.
+    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-results.jpg">
 
-    The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out. [view](assets/images/images-readme/supsup-readme-mapzoom.jpg)
+    - Google Map. The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out.
+    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">
 
-    If the user trys to click next without selection they will receive an alert. [view](assets/images/images-readme/supsup-readme-alert.jpg)
+    - Alert. If the user trys to click next without selection they will receive an alert.
+    <img align = "center" width ="300px" height = 200px src = "assets/images/images-readme/supsup-readme-alert.jpg">
 
-    At any time the user can choose to restart the questions by selecting 'Restart' button.
+    - Restart - At any time the user can choose to restart the questions by selecting 'Restart' button.
 
 
 ## Technologies Used
