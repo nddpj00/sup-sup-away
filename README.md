@@ -42,7 +42,24 @@
 
 -   Responsive on all device sizes
 
--   Interactive elements including a tool to assist finding locations
+-   <h3>Hero image/navigation</h3>Minimal, simple navigation links, engaging hero text and a stand-out button to take youstraight to the main function of the site. [view](assets/images/images-readme/supsup-readme-heroimg.jpg)
+
+-    <h3>The Finder Tool</h3>This is the main function of the site.  It offers users a tool    
+that takes the responses of a few key questions to work out the best locations for them to     
+paddleboard. 
+
+It initiates on the 'Start' button as directed on the page [view](assets/images/images-readme/supsup-readme-start-button.jpg)
+
+Runs through 4 questions [view](assets/images/images-readme/supsup-readme-questions.jpg)
+
+Provides a results page, listing the locations best suited to the user and marking them on the google map. [view](assets/images/images-readme/supsup-readme-results.jpg)
+
+The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out. [view](assets/images/images-readme/supsup-readme-results.jpg)
+
+If the user trys to click next without selection they will receive an alert. [view](assets/images/images-readme/supsup-readme-alert.jpg)
+
+At any time the user can choose to restart the questions by selecting 'Restart' button.
+
 
 ## Technologies Used
 
