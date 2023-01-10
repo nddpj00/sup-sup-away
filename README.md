@@ -32,20 +32,22 @@
     -   #### Imagery
         -   I chose photographs that either had a laid back tone or had scenes of attractive landscapes. I feel many people are drawn to Paddleboarding as it gives an opportunity to appreciate your surroundings, practicing a past-time that is slow, relaxed and meditative.
 
+
+
 *   ### Wireframes
 
-    -   Large Screen Wireframe
-![PC wireframe](assets/images/images-readme/supsup-wireframe.jpg)
+   Large Screen Wireframe
+   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-wireframe.jpg">
 
-    -   Mobile Screen Wireframe
-![Mobile Wireframe](assets/images/images-readme/supsup-Mobile-wireframe.jpg)
+   Mobile Screen Wireframe
+   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-Mobile-wireframe.jpg">
 
 ##  Features
 
 1. Responsive on all device sizes
 
 2. Hero image/navigation
-   Minimal, simple navigation links, engaging hero text and a stand-out button to take you straight to the main function of the site.
+   Minimal, simple navigation links, engaging hero text and a stand-out button to take you straight to the main function of the site.  
    <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
 
 3. The Finder Tool
