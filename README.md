@@ -108,7 +108,20 @@
 
 ### Manual Vs Automated Testing
 
+- I opted to manually test my site.  The reasons are -  
 
+    1. As the sole developer I can quickly carry out tests as I go and can obtain immediate results from the tests.
+    2. The site I have is only one page, consisting of 10 links and the main function - the 'finder tool'.  I have devised a 10-step test process that will be carried out on multiple, most commonly used browsers and devices. It provides a very thorough, robust and comprehensive solution to ensure the site has no bugs, errors or anomalies.
+    3. As the main purpose of the site is to learn Javascript, show understanding and gain a qualification; and won't need to be maintained in the long term, I felt the time it would take to build an automated testing process was unnecessary on this occasion.
+    4. UX testing. Important to the overall usability of the site and can only be carried out via manual testing. Automated testing lacks human observation and cognitive abilities.
+
+- Reasons why I would use Automated Testing in the future for other projects.
+
+    1. Larger scale site or application that may have multiple pages and an increased amount of functionality and code. Manual testing would take too long.
+    2. Working in a team. Possibly no one person with in-depth knowledge of how the whole site should work and perform. Automated tests would allow anyone to run them.
+    3. Continual code added to the site. Automated tests can be ran after every addition, ensuring no disruption to the existing code.
+    4. Higher accuracy. Important if the site is in the public domain and linked to an organisation. To avoid deprecation of the 'brand' due to a poor website.
+    5. Time. Though they take longer to set up initially, having a bespoke automated testing process will save time in the long run, due to how frequently they need to be run when maintaining and improving the site.
 
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
