@@ -1,5 +1,7 @@
+/*jshint esversion:6*/
+
 // Array of Objects containing locations
-let locationArray = [
+const locationArray = [
 
       {name :'Joss Bay Surf School - Broadstairs',
       destination :'Sea',
@@ -172,7 +174,7 @@ let locationArray = [
 
       {name :'Stackpole Quay- Pembrokeshire, Wales',
       destination :'Sea',
-      hire: 'No',
+      hire: 'Yes',
       lessons :'No',
       expertise : 'Expert',
       website : 'https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/stackpole-quay',
@@ -188,7 +190,7 @@ let locationArray = [
 
       {name :'Black Rock Sands - Porthmadog, Wales',
       destination :'Sea',
-      hire: 'No',
+      hire: 'Yes',
       lessons :'No',
       expertise : 'Expert',
       website : 'https://www.visitsnowdonia.info/black-rock-sands',
@@ -305,4 +307,28 @@ let locationArray = [
       expertise : 'Beginner',
       website : 'https://www.ikencanoe.co.uk/',
       marker : { lat: 52.15091734759989, lng: 1.5105785713970208}},
+
+      {name :'River Stour - Sandwich, Kent',
+      destination :'River',
+      hire: 'No',
+      lessons :'Yes',
+      expertise : 'Beginner',
+      website : 'https://www.riverstourtrust.org/boat-trips/paddling-the-river-stour/',
+      marker : { lat: 51.294925421445605, lng: 1.331526223768307}},
+
+      {name :'River Medway- Gillingham, Kent',
+      destination :'River',
+      hire: 'No',
+      lessons :'Yes',
+      expertise : 'Expert',
+      website : 'https://medwaywatersports.co.uk/',
+      marker : { lat: 51.39583533857076, lng: 0.5628848137059936}},
+
+      {name :'Moo Canoes - London',
+      destination :'River',
+      hire: 'No',
+      lessons :'Yes',
+      expertise : 'Expert',
+      website : 'https://www.moocanoes.com/',
+      marker : { lat: 51.51221987333958, lng: -0.03852276089940568}},
     ];

@@ -1,4 +1,4 @@
-/*jshint esversion:6, esversion:9, loopfunc:true*/
+/*jshint esversion:6, esversion:9, loopfunc:true */
 const startButton = document.getElementById('start-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionBox = document.getElementById('question');
@@ -172,7 +172,7 @@ restartButton.classList.remove('hide');
 }
 
 // creates a new object from users selections
-let resultObject = new Object();
+let resultObject = {};
 function createUserDestObj(userAnswer, id) {
 
 if (id === 1){resultObject.destination = userAnswer;}

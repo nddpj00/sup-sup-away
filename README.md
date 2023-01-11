@@ -106,6 +106,11 @@
 
 ## Testing
 
+### Manual Vs Automated Testing
+
+
+
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
 
 
@@ -115,11 +120,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
     
 -   W3C CSS Validator complete without errors.
    <img align = "center"  style= width:300px; height:200px src= assets/images/images-testing/supsup-css-validator.jpg>  
-   
 
-I used JS Hint and JS Lint for validating my Javascript code.  They both produced reports with no errors but some warnings.  The warning included using 'let' and 'const', arrow functions and using single quotations instead of double. I'm happy that none of the warnings will effect the site.  As a precausion I've carried out extensive brower testing to ensure my code will work.
-
-### Manual Vs Automated Testing
+-   JS Hint Javascript Validator installed and showing no errors or warnings.
+    -  The validator initially gave out warnings for using ES6 declarations'let' and 'const'. Adjusting the 
+  options meant the linter accepted these. see main.js ln1, col1 (esversion:6 added to options) esversion:9,  loopfunc:true*/)
+    - The validator gave a warning for using a Spread operator as only available since ES9. Option added to linter to ignore. see main.js ln1, col1 (esversion:9 added to options)
+    - The validator gave the following warning - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (map) (W083).  
+      This is referencing the Google Map marker function. The loop is providing multiple variables so I've decided to leave this where it is.  I feel within the required scope of the site the semantics wont be an issue.  
+      JS lint provide a 'relaxed' option for these types of concerns, which I've triggered.  
+      See main.js ln1, col1 (loopfunc:true )
 
 
 ### Testing User Stories from User Experience (UX) Section
