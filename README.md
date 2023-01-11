@@ -43,7 +43,7 @@
    <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-wireframe-tablet.jpg">
 
    Mobile Screen Wireframe
-   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-mobileph.wireframe.jpg">
+   <img align = "center" width = "250px" height = "1000px" src = "assets/images/images-readme/supsup-mobile-wireframe.jpg">
 
 ##  Features
 
