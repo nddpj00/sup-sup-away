@@ -39,8 +39,11 @@
    Large Screen Wireframe
    <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-wireframe.jpg">
 
+   Tablet Screen Wireframe
+   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-wireframe-tablet.jpg">
+
    Mobile Screen Wireframe
-   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-Mobile-wireframe.jpg">
+   <img align = "center" width = "300px" height = "1000px" src = "assets/images/images-readme/supsup-mobileph.wireframe.jpg">
 
 ##  Features
 
@@ -54,7 +57,7 @@
    This is the main function of the site.  
    It offers users a tool that takes the responses of a few key questions to work out the best locations for them to paddleboard.
 
-   - Start Button. It initiates on the 'Start' button as directed on the page.
+   - Start Button. It initiates on the 'Start' button as directed on the page.  
    <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-start-button.jpg">
 
    - Questions. Runs through 4 questions.
@@ -63,7 +66,7 @@
    - Results. Provides a results page, listing the locations best suited to the user and marking them on the google map.
    <img align = "center" width ="300px" height = "200px" src = "assets/images/images-readme/supsup-readme-results.jpg">
 
-   - Google Map. The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out.
+   - Google Map. The markers can to clicked on and will zoom in closer on the map and open an info-window with the url relevant to the location.  The marker can then be clicked again to zoom back out.  
    <img align = "center" width ="300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">
 
    - Alert. If the user trys to click next without selection they will receive an alert.

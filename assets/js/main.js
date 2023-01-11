@@ -1,4 +1,4 @@
-
+/*jshint esversion:6, esversion:9, loopfunc:true*/
 const startButton = document.getElementById('start-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionBox = document.getElementById('question');
@@ -100,6 +100,7 @@ if(displayButton1.style.backgroundColor !== 'green' &&
     displayButton2.style.backgroundColor !== 'green' &&
     displayButton3.style.backgroundColor !== 'green'){
     alert('Oops, dont forget to make a selection before clicking next.');
+    id--;
   }else if(id <= questions.length -1){
   console.log(id, selected);
   iterateQuestions(id);
@@ -143,7 +144,7 @@ names, co-ordinates and urls respectively*/
     position: finalUserMarkers[i],
     map,
     title : finalUserDestination[i],
-  }); 
+  });
 // Adds url in infowindow when marker zooms in
   const infowindow = new google.maps.InfoWindow({
     content:`<a href= '${finalUserWebsite[i]}' target ='_blank'}> ${finalUserDestination[i]}</a>`,
