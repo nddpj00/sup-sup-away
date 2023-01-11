@@ -10,17 +10,17 @@
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content; including links to social media.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content; including links to social media and other external sources.
         3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.
 
      -  #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to find information about paddleboarding in the UK.
-        2. As a Returning Visitor, I want to find information about where in the UK are good locations to paddleboard.
+        2. As a Returning Visitor, I want to find information about where in the UK are good, suitable locations to paddleboard.
         3. As a Returning Visitor, I want to know the requirements and equipment needed to paddleboard in the UK.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to find new locations to paddleboard as I become more experienced or how more equipment.
+        1. As a Frequent User, I want to find new locations to paddleboard as I become more experienced or have more equipment.
         2. As a Frequent User, I want to use the finder tool to help me plan my paddleboarding breaks.
         3. As a Frequent User, I want to be able to keep up to date with any social media activity relating to Sup Sup & Away!.
 
@@ -123,9 +123,7 @@
     4. Higher accuracy. Important if the site is in the public domain and linked to an organisation. To avoid deprecation of the 'brand' due to a poor website.
     5. Time. Though they take longer to set up initially, having a bespoke automated testing process will save time in the long run, due to how frequently they need to be run when maintaining and improving the site.
 
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors. 
-
+### Validators
 
 -   W3C Markup Validator complete without errors.
    <img align = "center" width ="300px" height = 200px src = "assets/images/images-testing/supsup-html-checker.jpg">
@@ -136,14 +134,72 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 -   JS Hint Javascript Validator installed and showing no errors or warnings.
     -  The validator initially gave out warnings for using ES6 declarations'let' and 'const'. Adjusting the 
-  options meant the linter accepted these. see main.js ln1, col1 (esversion:6 added to options) esversion:9,  loopfunc:true*/)
+  options meant the linter accepted these. see main.js ln1, col1 (esversion:6 added to options)
     - The validator gave a warning for using a Spread operator as only available since ES9. Option added to linter to ignore. see main.js ln1, col1 (esversion:9 added to options)
     - The validator gave the following warning - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (map) (W083).  
       This is referencing the Google Map marker function. The loop is providing multiple variables so I've decided to leave this where it is.  I feel within the required scope of the site the semantics wont be an issue.  
       JS lint provide a 'relaxed' option for these types of concerns, which I've triggered.  
       See main.js ln1, col1 (loopfunc:true )
 
+-   Lighthouse Accessability.
+    - Running at a score of 98 due to background on links not having a high enough contrast.  
+
+    <img align = "center" width ="300px" height = "200px" src = "assets/images/images-testing/supsup-testing-accessabilityfail.jpg">
+    
+    Updated with stronger, dark blue background to acheive 100.  
+    <img align = "center" width ="300px" height = "200px" src = "assets/images/images-testing/supsup-testing-accessabilitysuccess.jpg">
+
+-   Lighthouse Overall Performance.
+   - Performance 93 - After reduce and compressing all images.
+   - Best Practices 100
+   - SEO 100
+    <img align = "center" width ="300px" height = "200px" src = "assets/images/images-testing/supsup-lighthouse-overall.jpg">
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
+
+  1. As a First Time Visitor, I want to easily understand the main purpose of the site.
+  - Upon entering the site, users are greeted with a clear image that     includes a paddleboarder and H2 heading stating 'UK Paddleboarding Destination Specialist'.  
+  - There is a minimal navigation bar offering opportunites to go straight to social media links or to contact via email.
+  - There are two 'call to arms' - a button stating 'Click for Destination Finder' and at the bottom the start of a new section to scroll down to, with a H2 heading 'What is Paddleboarding?'
+
+  2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content; including links to social media and other external sources.
+  - The site has been designed to be fluid and never entrap the user. At the top of the single page there is a 'socials' option to take you straight to the bottom of the page where all the social media icons are available to be clicked.
+  - The 'Click for Destination Finder' button is clear and very visable when entering the site to allow quick access to this tool, without having to scroll down.
+  - Clues given to scroll down with the top of the 'What is Paddleboarding' heading, to encourage user investigation.
+  - When using the finder tool, there is always an option to select the 'Restart' button to begin the process again. A kind of exit.
+  - When the user is interacting with the Google Map, I've included functionality allowing the user to zoom back out of the marker by selecting the marker again.  Instructions are provided to the right or above (dependiing on device) of the map.
+  - Links are included within the body of the text to external resources relating to Waterways and licences.
+  - Links to navigate away for the site to one of the suitable locations are provided within the map marker infowindow.
+  
+  3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.
+  - User interaction is required to complete the questionnaire (finder tool), answering questions.
+  -  The user is able to navigate the Google Map, zoom in, zoom back out and click on the links to external information relating to their results.
+  - If no selection is made, before selecting the 'next' button, then an alert is triggered asking them to make a selection.
+  - When making a selection the button turns green to provide affirmative feedback.
+
+- #### Returning Visitor Goals
+
+ 1. As a Returning Visitor, I want to find information about paddleboarding in the UK.
+ - General information is provided within the 3 sections of the main body. Addressing - Whats is Paddleboarding?, What do I need? and Where can i paddleboard?
+ - Links are also included to external resources that offer maps to the UK Canal network and licence requirements.
+ 2. As a Returning Visitor, I want to find information about where in the UK are good, suitable locations to paddleboard.
+ -  The finder tool will determine the most suitable locations based on the users requirements.  The results from the questions will provide the areas and clubs via a marker on the map. When selecting one of the markers an infowindow opens displaying a url to take them externally for more detailed information about that location.
+ - The link to the Canal map is also a very useful resource.
+ 3. As a Returning Visitor, I want to know the requirements and equipment needed to paddleboard in the UK.
+ - Information is provided within 'What Do i need?' section.
+ - licence information can be obtained from the provided links to the British Canoe site and Wales Canoe site.
+
+ -   #### Frequent User Goals
+
+1. As a Frequent User, I want to find new locations to paddleboard as I become more experienced or have more equipment.
+- By selecting different responses to questions such as 'Level of Experience?' or 'Do you need to hire equipment?' will provide different locations to explore.
+- If running as a fully maintained site - new locations would need to be added and existing ones checked and updated.
+2. As a Frequent User, I want to use the finder tool to help me plan my paddleboarding breaks.
+- The Google map can be enlarged allowing for multiple location planning.
+- links to the individual locations resources are provided also.
+3. As a Frequent User, I want to be able to keep up to date with any social media activity relating to Sup Sup & Away!.
+- Icons are included at the bottom of the site to provide access to Facebook, Instagram and Twitter.
+- A shortcut is included on the navigation bar at the top to save scrolling.
+- If users would like to email direct then their preferred email client opens when clicking on 'Contact' in the nav bar or the email link at the bottome of the page.
