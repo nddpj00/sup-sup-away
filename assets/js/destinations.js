@@ -153,7 +153,7 @@ const locationArray = [
       hire: 'Yes',
       lessons :'No',
       expertise : 'Expert',
-      website : 'https://www.explorehighland.com/',
+      website : 'https://iye.scot/canoe-kayak-loch-ness/',
       marker : { lat: 57.32959791070306, lng: -4.4227257397810975}},
 
       {name :'North Coast 500 - Scotland',

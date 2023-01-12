@@ -108,10 +108,10 @@
 
 ### Manual Vs Automated Testing
 
-- I opted to manually test my site.  The reasons are -  
+- I opted to **manually** test my site.  The reasons are -  
 
     1. As the sole developer I can quickly carry out tests as I go and can obtain immediate results from the tests.
-    2. The site I have is only one page, consisting of 10 links and the main function - the 'finder tool'.  I have devised a 10-step test process that will be carried out on multiple, most commonly used browsers and devices. It provides a very thorough, robust and comprehensive solution to ensure the site has no bugs, errors or anomalies.
+    2. The site I have is only one page, consisting of 10 links and the main function - the 'finder tool'.  I have devised a 10-point test process that will be carried out on multiple, most commonly used browsers and devices. It provides a very thorough, robust and comprehensive solution to ensure the site has no bugs, errors or anomalies.
     3. As the main purpose of the site is to learn Javascript, show understanding and gain a qualification; and won't need to be maintained in the long term, I felt the time it would take to build an automated testing process was unnecessary on this occasion.
     4. UX testing. Important to the overall usability of the site and can only be carried out via manual testing. Automated testing lacks human observation and cognitive abilities.
 
@@ -161,7 +161,7 @@
 
   1. As a First Time Visitor, I want to easily understand the main purpose of the site.
   - Upon entering the site, users are greeted with a clear image that includes a paddleboarder and H2 heading stating 'UK Paddleboarding Destination Specialist'.  
-  - There is a minimal navigation bar offering opportunites to go straight to social media links or to contact via email.  
+  - As a single page site I decided to keep the navigation bar simple, offering opportunites to go straight to social media links or to contact via email.  
   <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
   - There are two 'call to arms' - a button stating 'Click for Destination Finder' and at the bottom the start of a new section to scroll down to, with a H2 heading 'What is Paddleboarding?'
 
@@ -218,3 +218,70 @@
 - Icons are included at the bottom of the site to provide access to Facebook, Instagram and Twitter.
 - A shortcut is included on the navigation bar at the top to save scrolling down through the entire site.
 - If users would like to email direct then their preferred email client opens when clicking on 'Contact' in the nav bar or the email link at the bottome of the page.
+
+### UX Manual Test process  
+
+  - The Test  
+
+    I enlisted the help of 5 family member.  All with varying degrees of *tech savvy-ness* if you like.  Different ages ranging from my six year old daughter to my mother (I'll spare her by not giving her age away).
+
+    I gave them my smartphone with the site loaded up and gave one instruction and no further advice or information.
+
+    **'Find a paddleboarding location that would be best suited to you.'**  
+
+    I then observed them navigate the site, use the finder tool and the corresponding map to find the information.
+
+- ##### Outcomes - 
+
+    Though the test is a little rudimentary it provided a lot of insight, watching people unfamiliar with the site trying to use it.  
+    
+  * The Good  
+
+    Everyone was successful in navigating the site to the finder tool and instigating the questionnaire.  They liked how well 'sign-posted' this was.  
+
+    They thought the overall site was engaging and pleasantly laid out.
+    
+    They also liked how the locations where marked on the map and all understood these corrolate to the results.
+
+  * The Bad
+
+    Some didnt realise the map could be interacted with.
+
+    Some that clicked on the map and zoomed in didnt realise they could click the marker again to zoom out. They then tried slowly zooming out.
+
+    If zooming back out using the zoom controls of the map, the info window was still open - hiding some of the other markers.
+
+
+  * Actions taken
+
+    I added in some instruction to help with the navigation of the map.  
+    <img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-mapinstructions.jpg">
+
+    I added code to remove the Info Window when zooming back out using the marker.  This allows the user to see all the result markers again allowing a subsequent selection, zooming in - then back out.  This works and feels a lot better for the user.
+
+### 10-point Manual Test process  
+
+I used a programme called Browserstack to perform the tests. This is software provided as part of the course, included in the Student pack.
+
+It recommendeded that 1 x high end, 1 x low end device and a tablet is tested for each main manufacturer of smart devices.  I'll be testing Apple, Samsung, Huawei and Google.
+
+Also I'll be testing on desktop/laptop devices, covering the main browsers used.  This ensures I've tested on a broad cross section of browsers and check functionality and responsiveness of good amount of varying devices.
+
+Here is the devices/browsers and a screenshot of the front page of my site.  
+<img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-screenshots.jpg">
+
+
+The 10-points are as follows -   
+Links
+1. Check nav bar links work. 'Contact' opens email client and 'Socials' takes you to bottom fo page.
+2. The button on the hero image 'Click here for finder tool' takes you to the tool.
+3. Social media icons in footer open respective site.
+4. Email link in footer opens email client.
+
+  Finder Tool  
+5. Run through questions with 3 x different permitations per device.
+6. Check 'Restart' button resets the tool during the questions and at result stage.
+7. Check 'Next' button without selection prompts alert and doesnt affect results.
+8. Check results provided match markers on map.
+9. Check map marker zoom in and zoom out work and Info Window is present with URL.
+10. Check URL is active and opens to external site on a new tab.
