@@ -166,73 +166,74 @@ This is where my site can help.  It makes use of its huge database of researched
   - Upon entering the site, users are greeted with a clear image that includes a paddleboarder and H2 heading stating 'UK Paddleboarding Destination Specialist'.  
   - As a single-page site I decided to keep the navigation bar simple, offering opportunities to go straight to social media links or to contact via email.  
   <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">  
-  - There are two 'call to arms' - a button stating 'Click for Destination Finder' and at the bottom the start of a new section to scroll down to, with a H2 heading 'What is Paddleboarding?'
+
+  - There are two 'call to arms' - a button stating 'Click for Destination Finder' and at the bottom the start of a new section to scroll down to, with a H2 heading 'What is Paddleboarding?'  
 
   2. As a First Time Visitor, I want to be able to easily navigate through the site to find content; including links to social media and other external sources.
   - The site has been designed to be fluid and never entrap the user. At the top of the single page, there is a 'socials' option to take you straight to the bottom of the page where all the social media icons are available to be clicked.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialicons.jpg">
-  - The 'Click for Destination Finder' button is clear and very visible when entering the site to allow quick access to this tool, without having to scroll down.
-  - Clues given to scroll down with the top of the 'What is Paddleboarding' heading, to encourage user investigation.
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialicons.jpg">  
+  - The 'Click for Destination Finder' button is clear and very visible when entering the site to allow quick access to this tool, without having to scroll down.  
+  - Clues given to scroll down with the top of the 'What is Paddleboarding' heading, to encourage user investigation.  
   - When using the finder tool, there is always an option to select the 'Restart' button to begin the process again. This can be triggered during the questions or at the end, with the results.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-restartbutton.jpg">
-  - When the user is interacting with the Google Map, I've included functionality allowing the user to zoom back out of the marker by selecting the marker again.  Instructions are provided to the right or above (depending on the device) of the map.
-  - Links are included within the body of the text to external resources relating to Waterways and licences.
-  - Links to navigate away from the site to one of the suitable locations are provided within the map marker Info Window.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-restartbutton.jpg">  
+  - When the user is interacting with the Google Map, I've included functionality allowing the user to zoom back out of the marker by selecting the marker again.  Instructions are provided to the right or above (depending on the device) of the map.  
+  - Links are included within the body of the text to external resources relating to Waterways and licences.  
+  - Links to navigate away from the site to one of the suitable locations are provided within the map marker Info Window.   
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">  
   
-  3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.
-  - User interaction is required to complete the questionnaire (finder tool) and answer questions.
-  -  The user can navigate the Google Map, zoom in, zoom back out and click on the links to external information relating to their results.
-  - If no selection is made, before selecting the 'next' button, then an alert is triggered asking them to make a selection.    
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-alert.jpg">
-  - When making a selection the button turns green to provide affirmative feedback.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-greenbutton.jpg">
-  - Navigation 'Socials' and 'Contact' links have a hover function that underlines the option about to be selected.   
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialhover.jpg">
+  3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.  
+  - User interaction is required to complete the questionnaire (finder tool) and answer questions.  
+  -  The user can navigate the Google Map, zoom in, zoom back out and click on the links to external information relating to their results.  
+  - If no selection is made, before selecting the 'next' button, then an alert is triggered asking them to make a selection.  
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-alert.jpg">  
+  - When making a selection the button turns green to provide affirmative feedback.   
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-greenbutton.jpg">  
+  - Navigation 'Socials' and 'Contact' links have a hover function that underlines the option about to be selected.  
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialhover.jpg">  
   - Social media icons change colour when hovered over.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialiconhover.jpg">
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialiconhover.jpg">  
 
 
 - #### Returning Visitor Goals
 
- 1. As a Returning Visitor, I want to find information about paddleboarding in the UK.
- - General information is provided within the 3 sections of the main body. Addressing - What is Paddleboarding?, What do I need? and Where can I paddleboard?
+ 1. As a Returning Visitor, I want to find information about paddleboarding in the UK.  
+ - General information is provided within the 3 sections of the main body. Addressing - What is Paddleboarding?, What do I need? and Where can I paddleboard?  
  - Links are also included to external resources that offer maps to the UK Canal network and licence requirements.  
- <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-externallinks.jpg">
- 2. As a Returning Visitor, I want to find information about where in the UK are good, suitable locations to paddleboard.
+ <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-externallinks.jpg">  
+ 2. As a Returning Visitor, I want to find information about where in the UK are good, suitable locations to paddleboard.  
  -  The finder tool will determine the most suitable locations based on the user's requirements.  The results from the questions will provide the areas and clubs via a marker on the map. When selecting one of the markers an Info Window opens displaying a URL to take them externally for more detailed information about that location.  
  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-results.jpg">
- - The link to the Canal map is also a very useful resource.
- 3. As a Returning Visitor, I want to know the requirements and equipment needed to paddleboard in the UK.
- - Information is provided within the 'What Do I need?' section.
- - licence information can be obtained from the provided links to the British Canoe site and Wales Canoe site. The link takes you straight to the checker whereby you can input the name of the lake or river and find out licence requirements.
- <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-waterwaylicence.jpg">
+ - The link to the Canal map is also a very useful resource.  
+ 3. As a Returning Visitor, I want to know the requirements and equipment needed to paddleboard in the UK.  
+ - Information is provided within the 'What Do I need?' section.  
+ - licence information can be obtained from the provided links to the British Canoe site and Wales Canoe site. The link takes you straight to the checker whereby you can input the name of the lake or river and find out licence requirements.  
+ <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-waterwaylicence.jpg">  
 
  -   #### Frequent User Goals
 
-1. As a Frequent User, I want to find new locations to paddleboard as I become more experienced or have more equipment.
-- By selecting different responses to questions such as 'Level of Experience?' or 'Do you need to hire equipment?' will provide different locations to explore.
-- If running as a fully maintained site - new locations would need to be added and existing ones checked and updated.
+1. As a Frequent User, I want to find new locations to paddleboard as I become more experienced or have more equipment.  
+- By selecting different responses to questions such as 'Level of Experience?' or 'Do you need to hire equipment?' will provide different locations to explore.  
+- If running as a fully maintained site - new locations would need to be added and existing ones checked and updated.  
 2. As a Frequent User, I want to use the finder tool to help me plan my paddleboarding breaks.
-- The Google map can be enlarged allowing for multiple location planning.
+- The Google map can be enlarged allowing for multiple location planning.  
 - Links to all the locations included in the users results are also provided.  
-<img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapplanning.jpg">
-3. As a Frequent User, I want to keep up to date with any social media activity relating to Sup Sup & Away!
-- Icons are included at the bottom of the site to provide access to Facebook, Instagram and Twitter.
-- A shortcut is included on the navigation bar at the top to save scrolling down through the entire site.
-- If users would like to email direct then their preferred email client opens when clicking on 'Contact' in the nav bar or the email link at the bottom of the page.
+<img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapplanning.jpg">  
+3. As a Frequent User, I want to keep up to date with any social media activity relating to Sup Sup & Away!  
+- Icons are included at the bottom of the site to provide access to Facebook, Instagram and Twitter.  
+- A shortcut is included on the navigation bar at the top to save scrolling down through the entire site.  
+- If users would like to email direct then their preferred email client opens when clicking on 'Contact' in the nav bar or the email link at the bottom of the page.  
 
 ### UX Manual Test process  
 
   - The Test  
 
-    I enlisted the help of 5 family members.  All with varying degrees of *tech savvy-ness* if you like.  Different age ranges from my six-year-old daughter to my mother (I'll spare her by not giving her age away).
+    I enlisted the help of 5 family members.  All with varying degrees of *tech savvy-ness* if you like.  Different age ranges from my six-year-old daughter to my mother (I'll spare her by not giving her age away).  
 
-    I gave them my smartphone with the site loaded up and gave one instruction and no further advice or information.
+    I gave them my smartphone with the site loaded up and gave one instruction and no further advice or information.  
 
     **'Find a paddleboarding location that would be best suited to you.'**  
 
-    I then observed them navigating the site, using the finder tool and the corresponding map to obtain the information.
+    I then observed them navigating the site, using the finder tool and the corresponding map to obtain the information.  
 
 - ##### Outcomes - 
 
@@ -242,88 +243,88 @@ This is where my site can help.  It makes use of its huge database of researched
 
     Everyone was successful in navigating the site to the finder tool and instigating the questionnaire.  They liked how well 'sign-posted' this was.  
 
-    They thought the overall site was engaging and pleasantly laid out.
+    They thought the overall site was engaging and pleasantly laid out.  
     
-    They liked how the locations were marked on the map and all testers understood these correlated to the results they had been given.
+    They liked how the locations were marked on the map and all testers understood these correlated to the results they had been given.  
 
   * The Bad
 
-    Some didn't realise the map could be interacted with.
+    Some didn't realise the map could be interacted with.  
 
-    Some that clicked on the map and zoomed in didn't realise they could click the marker again to zoom out. They then tried slowly zooming out.
+    Some that clicked on the map and zoomed in didn't realise they could click the marker again to zoom out. They then tried slowly zooming out.  
 
-    If zooming back out using the zoom controls of the map, the info window was still open - hiding some of the other markers.
+    If zooming back out using the zoom controls of the map, the info window was still open - hiding some of the other markers.  
 
 
-  * Actions taken
+  * Actions taken.  
 
     I added some instructions to help with the navigation of the map.  
-    <img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-mapinstructions.jpg">
+    <img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-mapinstructions.jpg">  
 
-    I added code to remove the Info Window when zooming back out using the marker.  This allows the user to see all the result markers again allowing a subsequent selection, zooming in - then back out.  This works and feels a lot better for the user.
+    I added code to remove the Info Window when zooming back out using the marker.  This allows the user to see all the result markers again allowing a subsequent selection, zooming in - then back out.  This works and feels a lot better for the user.  
 
 ### 10-point Manual Test process  
 
-I used a programme called Browserstack to perform the tests. This is software provided as part of the course, included in the Student Developer pack.
+I used a programme called Browserstack to perform the tests. This is software provided as part of the course, included in the Student Developer pack.  
 
-The application recommended that 1 x high-end, 1 x low-end device and a tablet is tested for each main manufacturer of smart devices.  I've tested Apple, Samsung, and Google.
+The application recommended that 1 x high-end, 1 x low-end device and a tablet is tested for each main manufacturer of smart devices.  I've tested Apple, Samsung, and Google.  
 
-Also, I've tested the site on a broad cross-section of browsers.  Chrome, Edge, Safari and Firefox.
+Also, I've tested the site on a broad cross-section of browsers.  Chrome, Edge, Safari and Firefox.  
 
 Here are the devices/browsers and a screenshot of the front page of my site.  
-<img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-screenshots.jpg">
+<img align = "center" width = "300px" height = "200px" src = "assets/images/images-testing/supsup-testing-screenshots.jpg">  
 
 
 The 10-points are as follows -   
-Links
-1. Check nav bar links work. 'Contact' opens the email client and 'Socials' takes you to bottom of the page.*
-2. The button on the hero image 'Click here for finder tool' takes you to the tool.
-3. Social media icons in the footer open the respective sites.
-4. Email link in the footer opens the email client.*
-*Some errors are expected on devices advising default email not set up.
+Links  
+1. Check nav bar links work. 'Contact' opens the email client and 'Socials' takes you to bottom of the page.*  
+2. The button on the hero image 'Click here for finder tool' takes you to the tool.  
+3. Social media icons in the footer open the respective sites.  
+4. Email link in the footer opens the email client.*  
+*Some errors are expected on devices advising default email not set up.  
 
   Finder Tool  
-5. Run through questions with 3 x different permitations per device.
-6. Check the 'Restart' button resets the tool during the questions and at the result stage.
-7. Check the 'Next' button without selection prompts alert and doesn't affect results.
-8. Check the results provided match the markers on the map.
-9. Check the map markers zoom in and zoom out and the Info Window is present with the correct URL displaying.
-10. Check the URL is active and opens to an external site in a new tab.
+5. Run through questions with 3 x different permitations per device.  
+6. Check the 'Restart' button resets the tool during the questions and at the result stage.  
+7. Check the 'Next' button without selection prompts alert and doesn't affect results.  
+8. Check the results provided match the markers on the map.  
+9. Check the map markers zoom in and zoom out and the Info Window is present with the correct URL displaying.  
+10. Check the URL is active and opens to an external site in a new tab.  
 
 A small selection of screenshots showing the cross-browser testing.  
-Safari 16
-<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-safari16.jpg">  
-Samsung Tab8
-<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungtab8.jpg">  
-Samsung Ultra 22
-<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungultra22.jpg">
-Ipad Pro 12.9 2022
-<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-ipadpro21.9.jpg">
+Safari 16  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-safari16.jpg">   
+Samsung Tab8  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungtab8.jpg">   
+Samsung Ultra 22  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungultra22.jpg">  
+Ipad Pro 12.9 2022  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-ipadpro21.9.jpg">  
 
 
   ## Bugs
-  1. Missing target="_blank" on Canoe Wales link. Doesn't load in a separate tab.
-  2. Broken link to one of the locations. 
-  3. Typo in a URL for one of the locations.
-  4. During development I had an intermittent bug where the Google Map wouldn't load.
-  <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-bug.jpg">
-  5. During development I was getting a console error referring to a missing Favicon.
-  6. Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'. in the console.
-  -    NB. Unable to test hover on mobile and tablet devices and no mouse cursor.
+  1. Missing target="_blank" on Canoe Wales link. Doesn't load in a separate tab.  
+  2. Broken link to one of the locations.  
+  3. Typo in a URL for one of the locations.  
+  4. During development I had an intermittent bug where the Google Map wouldn't load.  
+  <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-bug.jpg">  
+  5. During development I was getting a console error referring to a missing Favicon.  
+  6. Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'. in the console.  
+  -    NB. Unable to test hover on mobile and tablet devices and no mouse cursor.  
 
   ## Fixes
-  1. Code added - target="_blank"
-  2. Updated object with a valid URL.
-  3. Corrected typo.
-  4. The issue was that I had the Google Map trying to load before the Javascript. This was solved with help from my mentor.  A simple 'defer' added to the script fixed it.
-   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-fix.jpg">
+  1. Code added - target="_blank"  
+  2. Updated object with a valid URL.  
+  3. Corrected typo.  
+  4. The issue was that I had the Google Map trying to load before the Javascript. This was solved with help from my mentor.  A simple 'defer' added to the script fixed it.  
+   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-fix.jpg">  
   5. I decided the easiest solution was to design a little icon and add it to clear the error. In the end I was quite pleased with it!  
-   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-favicon.jpg">
-  6. Researching the error message it appears no action is required.  Git Hub pages disable FLOC which is a user-tracking tool.
-    https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort
+   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-favicon.jpg">  
+  6. Researching the error message it appears no action is required.  Git Hub pages disable FLOC which is a user-tracking tool.  
+    https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort  
     https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/
 
-   I'm happy that this completes the testing process for my site. It is error-free and works well across all the most popular browsers, along with being responsive on all different size devices.
+   I'm happy that this completes the testing process for my site. It is error-free and works well across all the most popular browsers, along with being responsive on all different size devices.  
 
    ### Known Bugs
 No known bugs
@@ -381,12 +382,12 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   [Bootstrap5](https://getbootstrap.com/docs/5.0/examples/) 
-The main structure is based on the Bootstrap5 Grid system.
-Buttons for styling and responsiveness
--   [GoogleMap](https://www.google.co.uk/maps)
-The map to depict the location of the results.
--   [JSHint](https://jshint.com/)
+-   [Bootstrap5](https://getbootstrap.com/docs/5.0/examples/)   
+The main structure is based on the Bootstrap5 Grid system.  
+Buttons for styling and responsiveness  
+-   [GoogleMap](https://www.google.co.uk/maps)  
+The map to depict the location of the results.  
+-   [JSHint](https://jshint.com/)  
 Validating my Javascript code, cleaning it up and removing unnecessary semi-colons!
 
 
@@ -394,14 +395,14 @@ Validating my Javascript code, cleaning it up and removing unnecessary semi-colo
 ### Content
 
 -  https://codepen.io/maheshambure21/pen/QwXaRw
-  The navigation hover effect was taken from this site.
+  The navigation hover effect was taken from this site.  
 -   All remaining content was written by the developer.
 
 
 
 ### Media
 
--   [Unsplash]( https://unsplash.com/)All photos used came from unsplash.
+-   [Unsplash]( https://unsplash.com/)All photos used came from unsplash.  
 -   [Font-Awesome](https://fontawesome.com/) Social media icons.
 
 ### Acknowledgements
