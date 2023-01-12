@@ -3,7 +3,11 @@ body {
     background-color: #f3f0ef!important
 }
 
-/*-----------------------------------NavBar and hover effect*/
+/*-----------------------------------NavBar and hover effect
+https://codepen.io/maheshambure21/pen/QwXaRw
+The navigation hover effect was use from this site.*/
+
+
 nav {
     width: 100%;
     margin: 0 auto;

@@ -4,8 +4,9 @@
 
 [View the live project here.](https://nddpj00.github.io/sup-sup-away/)
 
-Sup Sup & Away! is a site for people who paddleboard or for someone who's interested in knowing more about paddleboarding.  
-What sets the site apart is the ability to offer recommendations on paddleboarding destinations based on the users unique needs.
+Paddleboarding is a relatively new phenomenon, with a lot of people looking for information and guidance on how and in particular, *where* to get started.
+
+This is where my site can help.  It makes use of its huge database of researched locations together with the unique 'Finder Tool' to help determine the best locations based on your specific requirements.
 
 ## User Experience (UX)
 
@@ -114,7 +115,7 @@ What sets the site apart is the ability to offer recommendations on paddleboardi
 
     1. As the sole developer I can quickly carry out tests as I go and can obtain immediate results from the tests.
     2. The site I have is only one page, consisting of 10 links and the main function - the 'finder tool'.  I have devised a 10-point test process that will be carried out on multiple, most commonly used browsers and devices. It provides a very thorough, robust and comprehensive solution to ensure the site has no bugs, errors or anomalies.
-    3. As the main purpose of the site is to learn Javascript, show understanding and gain a qualification; and won't need to be maintained in the long term, I felt the time it would take to build an automated testing process was unnecessary on this occasion.
+    3. As the main purpose of the site is to learn Javascript, show understanding and gain a qualification; and won't need to be maintained in the long term, I felt the time it would take to build an automated testing process was unnecessary on this occasion.  In a real-world situation, the use of a test framework, such as Jest would be invaluable to ensure the continuous integrity of the site.
     4. UX testing. Important to the overall usability of the site and can only be carried out via manual testing. Automated testing lacks human observation and cognitive abilities.
 
 - Reasons why I would use Automated Testing in the future for other projects.
