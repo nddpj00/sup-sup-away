@@ -3,6 +3,7 @@ body {
     background-color: #f3f0ef!important
 }
 
+/*-----------------------------------NavBar and hover effect*/
 nav {
     width: 100%;
     margin: 0 auto;
@@ -66,6 +67,8 @@ nav.topnav ul li a:hover:after {
     width: auto;
 }
 
+/*----------------------------------Main Hero Image and text*/
+
 #hero-image {
     background-image: url('../images/supsup-hero-largejpg.jpg');
     background-position: center;
@@ -120,7 +123,7 @@ nav.topnav ul li a:hover:after {
     color: #0a0a0a;
 }
 
-/*-------------------------------------------------Inner*/
+/*----------------------------------------main inner section*/
 .info-header {
     font-family: 'Ranchers', sans-serif;
     font-size: 40px;
@@ -151,7 +154,7 @@ nav.topnav ul li a:hover:after {
     color:hsl(243, 88%, 19%)
 }
 
-/*-------------------------------------------------quiz and map*/
+/*----------------------------------finder tool and map area*/
 #questionnaire {
     height: 500px;
     max-width: 90%;
@@ -164,7 +167,6 @@ nav.topnav ul li a:hover:after {
     background-size: cover;
 }
 
-/*-------------------------------------------------quiz*/
 #quiz{
     height: 440px;
 }
@@ -206,7 +208,6 @@ nav.topnav ul li a:hover:after {
     width: 100px;
 }
 
-
 #opt1{
     border-color: #0a0a0a;
     font-family: 'Ranchers', sans-serif;
@@ -235,7 +236,6 @@ nav.topnav ul li a:hover:after {
 .hide{
     display: none !important;
 }
-
 
 #result{
     position: relative;
@@ -277,7 +277,7 @@ nav.topnav ul li a:hover:after {
     width: 31%;
 }
 
-/*-------------------------------------------------footer*/
+/*----------------------------------------------------footer*/
 .footer-bottom {
     margin: auto;
     width: 100%;
@@ -351,8 +351,9 @@ nav.topnav ul li a:hover:after {
     font-family: 'Ranchers', sans-serif;
 }
 
-/*////////////Media Queries //////////////////////////*/
+/*/////////////////Media Queries //////////////////////////*/
 
+/*-----------------------------------------------------768px*/
 @media only screen and (max-width: 768px){
 
 nav ul li a {
@@ -438,6 +439,7 @@ nav ul li a {
 }
 }
 
+/*-----------------------------------------------------1920px*/
 @media screen and (min-width: 1920px) {
 
 .hero-text h2{

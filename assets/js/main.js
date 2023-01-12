@@ -45,7 +45,7 @@ startButton.classList.add('hide');
 runQuestionnaire();
 }
 
-// removes hidden question container and navigation next/restart buttons and sets first question with iterateQuestions
+// removes hidden question container and navigation next/restart buttons and sets first question with iterateQuestions function
 function runQuestionnaire() {
   questionContainerElement.classList.remove('hide');
   nextButton.classList.remove('hide');
@@ -95,7 +95,7 @@ nextButton.addEventListener("click", function(){
 id++;
 createUserDestObj(selected,id);
 
-//checks for selection and if none made alert triggered
+//checks for selection and if none made an alert is triggered
 if(displayButton1.style.backgroundColor !== 'green' &&
     displayButton2.style.backgroundColor !== 'green' &&
     displayButton3.style.backgroundColor !== 'green'){
@@ -124,7 +124,7 @@ function finalDestination() {
   let matchedIndicesArray = compareLocation();
   console.log(matchedIndicesArray);
 
-// creates an array of the location array name values
+// creates an array of the locationArray name values
   let destNames = locationArray.map((object) => object.name);
   let destMarkers = locationArray.map((object1) => object1.marker);
   let destWeb = locationArray.map((object2) => object2.website);
@@ -139,18 +139,18 @@ names, co-ordinates and urls respectively*/
   console.log(finalUserDestination);
   console.log(finalUserWebsite[i]);
 
-// adds markers on map for each location
+// adds markers on map for each location in results
   const marker = new google.maps.Marker({
     position: finalUserMarkers[i],
     map,
     title : finalUserDestination[i],
   });
-// Adds url in infowindow when marker zooms in
+// Adds url in Info Window when marker zooms in
   const infowindow = new google.maps.InfoWindow({
     content:`<a href= '${finalUserWebsite[i]}' target ='_blank'}> ${finalUserDestination[i]}</a>`,
     ariaLabel: `${finalUserDestination}`,
 });
-// zooms in on location when clicked
+// zooms out and closes Info Window if zoom set less than 7, otherwise zooms in on location when marker clicked
   marker.addListener("click", () => {
     if(map.getZoom() > 7){
     map.setCenter( { lat: 53.69631, lng: -3.62492 });
@@ -184,7 +184,7 @@ return resultObject;
 console.log(resultObject);
 
 /*stringifies user selections (resultObject) and creates duplicate,
-removing name and website keys. Then compares duplicate to stringified locationArry*/
+removing name and website keys. Then compares duplicate to stringified locationArray*/
 
 function compareLocation(){
 
