@@ -276,7 +276,7 @@ Links
 1. Check nav bar links work. 'Contact' opens email client and 'Socials' takes you to bottom fo page.
 2. The button on the hero image 'Click here for finder tool' takes you to the tool.
 3. Social media icons in footer open respective site.
-4. Email link in footer opens email client.
+4. Email link in footer opens email client.(Though error expected on some devicesadvising default email not set up)
 
   Finder Tool  
 5. Run through questions with 3 x different permitations per device.
@@ -285,3 +285,112 @@ Links
 8. Check results provided match markers on map.
 9. Check map marker zoom in and zoom out work and Info Window is present with URL.
 10. Check URL is active and opens to external site on a new tab.
+
+A small selection of screenshots showing the cross browser testing.  
+Safari 16
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-safari16.jpg">  
+Samsung Tab8
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungtab8.jpg">  
+Samsung Ultra 22
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-samsungultra22.jpg">
+Ipad Pro 12.9 2022
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-ipadpro21.9.jpg">
+
+
+  ## Bugs
+  1. Missing target="_blank" on Canoe Wales link. To load in separate tab.
+  2. Broken link to one of the locations. 
+  3. Typo in URL for one location.
+  4. During development I had an intermittent bug where the Google Map wouldnt load.
+  <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-bug.jpg">
+  -    NB. Unable to test hover on mobile and tablet devices and no mouse cursor.
+
+  ## Fixes
+  1. Code added - target="_blank"
+  2. Updated object with a valid URL.
+  3. Corrected typo.
+  4. The issue was that I had the Google Map trying to load before the Javascript. This was solved via my mentor.  A simple 'defer' added to the script fixed it.
+   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-fix.jpg">
+
+   I'm happy that this completes the testing process for my site. It is error free and works well across all the most popular browsers, along with being responsive on all different sizes devices.
+
+   ### Known Bugs
+No known bugs
+
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+## Credits
+
+### Code
+
+-   [Bootstrap5](https://getbootstrap.com/docs/5.0/examples/) 
+The main structure is based on the Bootstrap5 Grid system.
+Buttons for styling and responsiveness
+
+
+
+### Content
+
+-  https://codepen.io/maheshambure21/pen/QwXaRw
+  The navigation hover effect was taken from this site.
+-   All remaining content was written by the developer.
+
+
+
+### Media
+
+-   [Unsplash]( https://unsplash.com/)All photos used came from unsplash.
+-   [Font-Awesome](https://fontawesome.com/) Social media icons and down point icon
+
+### Acknowledgements
+
+-   My Mentor for continuous helpful feedback.
+
+-   EKC course facilitator for introducing me to many new concepts and software and lots of great advice.

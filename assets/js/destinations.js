@@ -121,7 +121,7 @@ const locationArray = [
       hire: 'No',
       lessons :'No',
       expertise : 'Beginner',
-      website : 'https://seearoundbritain.com/venues/west-cliff-beach-whitby,',
+      website : 'https://seearoundbritain.com/venues/west-cliff-beach-whitby',
       marker : { lat: 54.49211119569256, lng: -0.6223178449836911}},
 
       {name :'Hickling Broad - Norfolk',
