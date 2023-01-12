@@ -218,6 +218,7 @@ This is where my site can help.  It makes use of its huge database of researched
 - The Google map can be enlarged allowing for multiple location planning.  
 - Links to all the locations included in the users results are also provided.  
 <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapplanning.jpg">  
+
 3. As a Frequent User, I want to keep up to date with any social media activity relating to Sup Sup & Away!  
 - Icons are included at the bottom of the site to provide access to Facebook, Instagram and Twitter.  
 - A shortcut is included on the navigation bar at the top to save scrolling down through the entire site.  
@@ -235,7 +236,7 @@ This is where my site can help.  It makes use of its huge database of researched
 
     I then observed them navigating the site, using the finder tool and the corresponding map to obtain the information.  
 
-- ##### Outcomes - 
+- #### Outcomes
 
     Though the test is a little rudimentary it provided a lot of insight, watching people unfamiliar with the site trying to use it.  
     
