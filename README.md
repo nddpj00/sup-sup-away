@@ -3,6 +3,10 @@
 <h2 align = "center"><img src="assets/images/images-readme/supsup-responsive-display.jpg"></h2>
 
 [View the live project here.](https://nddpj00.github.io/sup-sup-away/)
+
+Sup Sup & Away! is a site for people who paddleboard or for someone who's interested in knowing more about paddleboarding.  
+What sets the site apart is the ability to offer recommendations on paddleboarding destinations based on the users unique needs.
+
 ## User Experience (UX)
 
 -   ### User stories

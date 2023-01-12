@@ -434,4 +434,20 @@ const locationArray = [
       expertise : 'Expert',
       website : 'https://riverdart.co.uk/',
       marker : { lat: 50.44582246574891, lng: -3.6907721675691856}},
+
+      {name :'River Glen - Lincolnshire',
+      destination :'River',
+      hire: 'Yes',
+      lessons :'No',
+      expertise : 'Expert',
+      website : 'https://waterways.org.uk/waterways/discover-the-waterways/river-glen',
+      marker : { lat: 52.78293148572504, lng: -0.25981956788715604}},
+
+      {name :'River Orwell - Suffolk',
+      destination :'River',
+      hire: 'Yes',
+      lessons :'No',
+      expertise : 'Beginner',
+      website : 'https://allaboutipswich.com/blog/2019/river-orwell',
+      marker : { lat: 52.00535738639512, lng: 1.2219147634493612}}
     ];
