@@ -6,7 +6,7 @@
 
 Paddleboarding is a relatively new phenomenon, with a lot of people looking for information and guidance on how and in particular, *where* to get started.
 
-This is where my site can help.  It makes use of its huge database of researched locations together with the unique 'Finder Tool' to help determine the best locations based on your specific requirements.
+This is where my site can help.  It makes use of its huge database of researched locations together with the unique 'Finder Tool' to help determine the best destinations based on your specific requirements.
 
 ## User Experience (UX)
 
@@ -33,7 +33,7 @@ This is where my site can help.  It makes use of its huge database of researched
     -   #### Colour Scheme
         -   The main background is off-white #f3f0ef. The finder tool includes orange for the buttons and some backgrounds hsl(27, 88%, 66%);. Otherwise, the majority of the remainder is made up of photography.
     -   #### Typography
-        -   The main headings use a font called 'Ranchers' including the H1 hero and the h2 heading at the beginning of each paragraph. It's typical of the 1950s, used on posters and designed to be big - for maximum effect. I felt it worked well for a surfing feel of the site. The Montserrat font is used for the paragraphs throughout the website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
+        -   The main headings used a font called 'Ranchers' including the H1 hero and the h2 heading at the beginning of each paragraph. It's typical of the 1950s, used on posters and designed to be big - for maximum effect. I felt it worked well for a surfing feel of the site. The Montserrat font is used for the paragraphs throughout the website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
     -   #### Imagery
         -   I chose photographs that either had a sepia, vintage tone about them or had scenes of attractive landscapes. This was to give the site an overall style that links in with the font and compliments the overall retro, surf style.
 
@@ -52,11 +52,11 @@ This is where my site can help.  It makes use of its huge database of researched
 
 1. Responsive on all device sizes
 
-2. Hero image/navigation
-   Minimal, simple navigation links, engaging hero text and a stand-out button to take you straight to the main function of the site.  
+2. Hero image/navigation  
+   Simple, unfussy navigational links, engaging hero text and a stand-out button to take you straight to the main function of the site.  
    
 
-3. The Finder Tool
+3. The Finder Tool.
    This is the main function of the site.  
    It offers users a tool that takes the responses to a few key questions to work out the best locations for them to paddleboard.
 
@@ -165,7 +165,7 @@ This is where my site can help.  It makes use of its huge database of researched
   1. As a First Time Visitor, I want to easily understand the main purpose of the site.
   - Upon entering the site, users are greeted with a clear image that includes a paddleboarder and H2 heading stating 'UK Paddleboarding Destination Specialist'.  
   - As a single-page site I decided to keep the navigation bar simple, offering opportunities to go straight to social media links or to contact via email.  
-  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">
+  <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-heroimg.jpg">  
   - There are two 'call to arms' - a button stating 'Click for Destination Finder' and at the bottom the start of a new section to scroll down to, with a H2 heading 'What is Paddleboarding?'
 
   2. As a First Time Visitor, I want to be able to easily navigate through the site to find content; including links to social media and other external sources.
