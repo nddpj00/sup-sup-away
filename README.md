@@ -174,24 +174,29 @@ This is where my site can help.  It makes use of its huge database of researched
         2. As a First Time Visitor, I want to be able to easily navigate through the site to find content; including links to social media and other external sources.
         - The site has been designed to be fluid and never entrap the user. At the top of the single page, there is a 'socials' option to take you straight to the bottom of the page where all the social media icons are available to be clicked.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialicons.jpg">  
+
         - The 'Click for Destination Finder' button is clear and very visible when entering the site to allow quick access to this tool, without having to scroll down.  
-         - Clues given to scroll down with the top of the 'What is Paddleboarding' heading, to encourage user investigation.  
+        - Clues given to scroll down with the top of the 'What is Paddleboarding' heading, to encourage user investigation.  
         - When using the finder tool, there is always an option to select the 'Restart' button to begin the process again. This can be triggered during the questions or at the end, with the results.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-restartbutton.jpg">  
+
         - When the user is interacting with the Google Map, I've included functionality allowing the user to zoom back out of the marker by selecting the marker again.  Instructions are provided to the right or above (depending on the device) of the map.  
-         - Links are included within the body of the text to external resources relating to Waterways and licences.  
+        - Links are included within the body of the text to external resources relating to Waterways and licences.  
         - Links to navigate away from the site to one of the suitable locations are provided within the map marker Info Window.   
-        <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/ supsup-readme-mapzoom.jpg">  
+        <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-mapzoom.jpg">  
 
         3. As a First Time Visitor, I want to be able to interact with the site. Initiate controls and be given feedback.  
         - User interaction is required to complete the questionnaire (finder tool) and answer questions.  
         -  The user can navigate the Google Map, zoom in, zoom back out and click on the links to external information relating to their results.  
         - If no selection is made, before selecting the 'next' button, then an alert is triggered asking them to make a selection.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-alert.jpg">  
+
         - When making a selection the button turns green to provide affirmative feedback.   
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-greenbutton.jpg">  
+
         - Navigation 'Socials' and 'Contact' links have a hover function that underlines the option about to be selected.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialhover.jpg">  
+
         - Social media icons change colour when hovered over.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-socialiconhover.jpg">  
 
@@ -212,6 +217,7 @@ This is where my site can help.  It makes use of its huge database of researched
         - Information is provided within the 'What Do I need?' section.  
         - licence information can be obtained from the provided links to the British Canoe site and Wales Canoe site. The link takes you straight to the checker whereby you can input the name of the lake or river and find out licence requirements.  
         <img align = "center" width = "300px" height = "200px" src = "assets/images/images-readme/supsup-readme-waterwaylicence.jpg">  
+
 
     -   #### Frequent User Goals
 
@@ -308,26 +314,28 @@ Ipad Pro 12.9 2022
 <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-ipadpro21.9.jpg">  
 
 
-  ## Bugs
-  1. Missing target="_blank" on Canoe Wales link. Doesn't load in a separate tab.  
-  2. Broken link to one of the locations.  
-  3. Typo in a URL for one of the locations.  
-  4. During development I had an intermittent bug where the Google Map wouldn't load.  
-  <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-bug.jpg">  
-  5. During development I was getting a console error referring to a missing Favicon.  
-  6. Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'. in the console.  
-  -    NB. Unable to test hover on mobile and tablet devices and no mouse cursor.  
+## Bugs
+1. Missing target="_blank" on Canoe Wales link. Doesn't load in a separate tab.  
+2. Broken link to one of the locations.  
+3. Typo in a URL for one of the locations.  
+4. During development I had an intermittent bug where the Google Map wouldn't load.  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-bug.jpg">  
 
-  ## Fixes
-  1. Code added - target="_blank"  
-  2. Updated object with a valid URL.  
-  3. Corrected typo.  
-  4. The issue was that I had the Google Map trying to load before the Javascript. This was solved 
-    with help from my mentor.  A simple 'defer' added to the script fixed it.  
-    <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-fix.jpg">  
-  5. I decided the easiest solution was to design a little icon and add it to clear the error. In the end I was quite pleased with it!  
-   <img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-favicon.jpg">  
-  6. Researching the error message it appears no action is required.  Git Hub pages disable FLOC which is a user-tracking tool.  
+5. During development I was getting a console error referring to a missing Favicon.  
+6. Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'. in the console.  
+-    NB. Unable to test hover on mobile and tablet devices and no mouse cursor.  
+
+## Fixes
+1. Code added - target="_blank"  
+2. Updated object with a valid URL.  
+3. Corrected typo.  
+4. The issue was that I had the Google Map trying to load before the Javascript. This was     solved with help from my mentor.  A simple 'defer' added to the script fixed it.  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-googlemap-fix.jpg">  
+
+5. I decided the easiest solution was to design a little icon and add it to clear the error. In the end I was quite pleased with it!  
+<img align = "center" width = "200px" height = "100px" src = "assets/images/images-testing/supsup-testing-favicon.jpg">  
+
+6. Researching the error message it appears no action is required.  Git Hub pages disable     FLOC which is a user-tracking tool.  
     https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort  
     https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/
 
